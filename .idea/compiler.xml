@@ -18,5 +18,17 @@
         <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base_main" target="1.5" />
+      <module name="base_test" target="1.5" />
+      <module name="distributed.core_main" target="1.5" />
+      <module name="distributed.core_test" target="1.5" />
+      <module name="distributed.front_main" target="1.5" />
+      <module name="distributed.front_test" target="1.5" />
+      <module name="distributed.server.demo_main" target="1.5" />
+      <module name="distributed.server.demo_test" target="1.5" />
+      <module name="distributed_main" target="1.5" />
+      <module name="distributed_test" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
