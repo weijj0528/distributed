@@ -1,0 +1,133 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+group 'com.vijay'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.5
+
+repositories {
+    // 使用Maven本地仓库 USER_HOME/.m2/settings.xml >> M2_HOME/conf/settings.xml >> USER_HOME/.m2/repository。
+    mavenLocal()
+    // 局域网Maven仓库
+//    maven {
+//        url "http://192.168.1.131:8081/repository/maven-releases/"
+//    }
+    //阿里云
+//    maven {
+//        url "http://maven.aliyun.com/nexus/content/groups/public/"
+//    }
+    // Maven 中央仓库
+    mavenCentral()
+    // 其他Maven仓库
+//    maven {
+//        url "https://maven-eu.nuxeo.org/nexus/content/repositories/public-releases/"
+//    }
+
+}
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'
+    compile group: 'commons-lang', name: 'commons-lang', version: '2.6'
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+    compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
+    compile group: 'commons-httpclient', name: 'commons-httpclient', version: '3.1'
+    compile group: 'commons-dbcp', name: 'commons-dbcp', version: '1.4'
+}
+
+// dubbox 接口打包
+task jarWithDubbox(type: Jar) {
+    dependsOn classes
+    baseName project.name
+    classifier "dubbo"
+    // version = 1.0
+    // extension = "jar" //后缀名
+    // archiveName 最终的 Jar 包名，如果没设置，默认为 [baseName]-[appendix]-[version]-[classifier].[extension]
+    from("$buildDir/classes/main") {
+//        include "com/ycmm/wms/model/*"
+//        include "com/ycmm/wms/service/*"
+//        exclude "com/ycmm/wms/service/BaseService.class"
+    }
+}
+// 将src/main/java编译的class打包成${project.name}-${version}.jar放入到build/libs目录下,配置文件没必要打包 可执行
+task jarWithoutResources(type: Jar) {
+    dependsOn jarWithDubbox
+    baseName project.name
+    String someString = ''
+    configurations.runtime.each { someString = someString + " lib/" + it.name } //遍历项目的所有依赖的jar包赋值给变量someString
+    manifest {
+        attributes 'Implementation-Title': 'Gradle By Weiun'
+        attributes 'Implementation-Version': version
+        attributes 'Main-Class': 'com.ycmm.wms.Main'
+        attributes 'Class-Path': someString
+    }
+    from("$buildDir/classes/main") {
+//        exclude "com/ycmm/wms/MyGenerator.class"
+    }
+    from("$projectDir/src/main/resources") {
+//        exclude "gen"
+//        exclude "config/release"
+//        exclude "config/snapshot"
+//        exclude "config/db.properties"
+//        exclude "config/local.properties"
+//        exclude "log4j.properties"
+    }
+//    from("$projectDir/src/main/resources/config/$env") {
+//        include "*"
+//        exclude "log4j.properties"
+//        into("config")
+//    }
+//    from("$projectDir/src/main/resources/config/$env") {
+//        include "log4j.properties"
+//    }
+}
+
+//上传到nexus
+publishing {
+    publications {
+        //jar构件配置
+        mavenJava(MavenPublication) {
+            version = "$project.version"
+            artifactId = "$project.name"
+            groupId = "$project.group"
+            // 指定我们需要上传的内容
+//            artifact("$buildDir/libs/${project.getName()}-${project.getVersion()}-dubbo.jar") {
+//                // These values will be used instead of the values from the task. The task values will not be updated.
+//                classifier "dubbo"
+//                extension "jar"
+//            }
+            artifact("$buildDir/libs/${project.getName()}-${project.getVersion()}.jar") {
+                extension "jar"
+            }
+            pom.withXml {
+                asNode().appendNode('description', 'A demonstration of maven POM customization')
+                def depNodes = asNode().appendNode('dependencies')
+                project.configurations.collectMany { it.allDependencies }.toSet().findAll {
+                    it instanceof ProjectDependency || it instanceof ExternalModuleDependency
+                }.each { dep ->
+                    def depNode = depNodes.appendNode('dependency')
+                    depNode.appendNode('groupId', dep.getGroup())
+                    depNode.appendNode('artifactId', dep.getName())
+                    depNode.appendNode('version', dep.getVersion())
+                    depNode.appendNode('scope', 'compile')
+                }
+            }
+        }
+    }
+    repositories {
+        maven{
+            url "http://192.168.1.131:8081/repository/maven-releases"
+            credentials {
+                username 'admin'
+                password 'admin123'
+            }
+        }
+    }
+}

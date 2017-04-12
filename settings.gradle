@@ -1,0 +1,6 @@
+rootProject.name = 'distributed'
+include 'base'
+include 'distributed.core'
+include 'distributed.front'
+include 'distributed.server.demo'
+
