@@ -1,15 +1,21 @@
-group 'com.vijay'
-version '1.0-SNAPSHOT'
-
 apply plugin: 'java'
 apply plugin: 'war'
+
+group 'com.vijay'
+version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.5
 
 repositories {
+    mavenLocal()
+    // 局域网Maven仓库
+    maven {
+        url "http://192.168.1.14:8081/repository/maven-releases/"
+    }
     mavenCentral()
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'com.vijay', name: 'distributed.core', version: '1.0-SNAPSHOT'
 }

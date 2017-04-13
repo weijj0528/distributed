@@ -9,6 +9,10 @@ sourceCompatibility = 1.5
 
 repositories {
     mavenLocal()
+    // 局域网Maven仓库
+    maven {
+        url "http://192.168.1.14:8081/repository/maven-releases/"
+    }
     mavenCentral()
 }
 
@@ -37,9 +41,11 @@ dependencies {
     // 解析 User-Agent 字符串 操作系统/Web浏览器 /移动设别/平板设别/Email 客户端/ 类似Gmail和Hotmail的客户端
     compile group: 'eu.bitwalker', name: 'UserAgentUtils', version: '1.20'
     compile group: 'org.aspectj', name: 'aspectjrt', version: '1.8.6'
+    // fastjson
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.31'
     // jackson
-    compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.10'
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.8.0'
+    compile group: 'org.codehaus.jackson', name: 'jackson-core-lgpl', version: '1.9.13'
+    compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.13'
     // dubbox
     compile group: 'com.alibaba', name: 'dubbo', version: '2.8.4'
     compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.4.9'
@@ -106,7 +112,7 @@ publishing {
     }
     repositories {
         maven {
-            url "http://192.168.1.131:8081/repository/maven-releases"
+            url "http://192.168.1.14:8081/repository/maven-releases/"
             credentials {
                 username 'admin'
                 password 'admin123'
