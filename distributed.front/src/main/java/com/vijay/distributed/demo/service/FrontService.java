@@ -1,4 +1,4 @@
-package com.vijay.distributed.front.service;
+package com.vijay.distributed.demo.service;
 
 import com.vijay.distributed.core.bean.FrontParamBean;
 import com.vijay.distributed.core.bean.ResultBean;

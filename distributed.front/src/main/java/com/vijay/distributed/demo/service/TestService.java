@@ -1,7 +1,6 @@
-package com.vijay.distributed.front.service;
+package com.vijay.distributed.demo.service;
 
 import com.vijay.distributed.core.annotation.LoginCheck;
-import com.vijay.distributed.core.annotation.RemoveLoginCheck;
 import com.vijay.distributed.core.bean.ParamBean;
 import com.vijay.distributed.core.bean.ResultBean;
 

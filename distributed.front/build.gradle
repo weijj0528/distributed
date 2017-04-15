@@ -20,6 +20,13 @@ repositories {
     }
     mavenCentral()
 }
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'com.vijay:distributed.server.demo:1.0-SNAPSHOT:dubbo'
+    compile group: 'com.vijay', name: 'distributed.core', version: '1.0-SNAPSHOT'
+}
+
 war {
     from("$buildDir/classes/main") {
         into("WEB-INF/classes")
@@ -40,9 +47,4 @@ war {
     }
     classpath = classpath - sourceSets.main.output
     classpath fileTree(dir: libsDir, include: "${project.name}-${version}.jar")
-}
-
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
-    compile group: 'com.vijay', name: 'distributed.core', version: '1.0-SNAPSHOT'
 }

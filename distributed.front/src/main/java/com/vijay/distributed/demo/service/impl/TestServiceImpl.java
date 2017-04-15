@@ -1,11 +1,10 @@
-package com.vijay.distributed.front.service.impl;
+package com.vijay.distributed.demo.service.impl;
 
 import com.vijay.distributed.core.annotation.LoginCheck;
-import com.vijay.distributed.core.annotation.RemoveLoginCheck;
 import com.vijay.distributed.core.base.BaseService;
 import com.vijay.distributed.core.bean.ParamBean;
 import com.vijay.distributed.core.bean.ResultBean;
-import com.vijay.distributed.front.service.TestService;
+import com.vijay.distributed.demo.service.TestService;
 import org.springframework.stereotype.Service;
 
 /**

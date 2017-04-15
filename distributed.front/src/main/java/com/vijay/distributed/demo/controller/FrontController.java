@@ -1,11 +1,10 @@
-package com.vijay.distributed.front.controller;
+package com.vijay.distributed.demo.controller;
 
 import com.vijay.distributed.core.base.BaseController;
 import com.vijay.distributed.core.bean.FrontParamBean;
 import com.vijay.distributed.core.bean.ResultBean;
 import com.vijay.distributed.core.exception.ErrorMsgException;
-import com.vijay.distributed.core.spring.SpringInit;
-import com.vijay.distributed.front.service.FrontService;
+import com.vijay.distributed.demo.service.FrontService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -18,9 +18,9 @@
     <dubbo:provider loadbalance="roundrobin"/>
 
     <!-- 服务提供者暴露服务配置     服务版本，与服务提供者的版本一致 | 服务方法调用超时时间(毫秒)    -->
-    <!--<dubbo:service ref="pdfGeneratesServiceImpl" interface="com.ycmm.gen.service.PdfGeneratesService" version="1.0"
-                   timeout="30000"/>-->
+    <dubbo:service ref="demoServiceImpl" interface="com.vijay.distributed.demo.service.DemoService" version="1.0"
+                   timeout="30000"/>
     <!--引用-->
-    <dubbo:reference id="demoService" interface="com.vijay.distributed.demo.service.DemoService"
-                     version="1.0" check="false" retries="0"/>
+    <!--<dubbo:reference id="pdfGeneratesService" interface="com.ycmm.gen.service.PdfGeneratesService"
+                     version="1.0" check="false" retries="0"/>-->
 </beans>

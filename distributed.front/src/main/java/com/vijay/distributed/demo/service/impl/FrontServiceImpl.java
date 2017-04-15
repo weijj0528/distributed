@@ -1,14 +1,14 @@
-package com.vijay.distributed.front.service.impl;
+package com.vijay.distributed.demo.service.impl;
 
-import com.vijay.distributed.core.annotation.LoginCheck;
-import com.vijay.distributed.core.annotation.RemoveLoginCheck;
 import com.vijay.distributed.core.base.BaseService;
 import com.vijay.distributed.core.bean.FrontParamBean;
 import com.vijay.distributed.core.bean.ParamBean;
 import com.vijay.distributed.core.bean.ResultBean;
 import com.vijay.distributed.core.exception.ErrorMsgException;
 import com.vijay.distributed.core.spring.SpringInit;
-import com.vijay.distributed.front.service.FrontService;
+import com.vijay.distributed.demo.service.DemoService;
+import com.vijay.distributed.demo.service.FrontService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Method;
@@ -19,8 +19,11 @@ import java.lang.reflect.Method;
 @Service
 public class FrontServiceImpl extends BaseService implements FrontService {
 
+
     public ResultBean request(FrontParamBean frontParamBean) throws Exception {
-        Object service = SpringInit.getBean(frontParamBean.getModule().trim() + "Impl");
+        Object service = SpringInit.getBean(frontParamBean.getModule().trim());
+        if (service == null)
+            service = SpringInit.getBean(frontParamBean.getModule().trim() + "Impl");
         if (service == null)
             throw new ErrorMsgException("该服务：" + frontParamBean.getModule() + "暂未提供！");
         Method method = null;
