@@ -6,8 +6,8 @@ import java.lang.annotation.*;
  * Created by Administrator on 2017/4/13.
  */
 @Inherited
-@Target({ElementType.METHOD, ElementType.TYPE})
+@Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface LoginCheck {
+public @interface RemoveLoginCheck {
 }

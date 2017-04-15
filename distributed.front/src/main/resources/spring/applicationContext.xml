@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+		">
+
+    <!-- 引入jdbc配置文件 -->
+    <context:property-placeholder location="classpath:config/conf.properties"/>
+
+    <!-- 系统启动加载 配置文件 -->
+    <bean class="com.vijay.distributed.core.system.SysConfig" init-method="init">
+        <property name="location" value="classpath:config/conf.properties"/>
+    </bean>
+
+    <!-- 配置 Spring 自动扫描 并加载资源配置文件 -->
+    <context:component-scan base-package="com.vijay.distributed.front.*">
+        <context:exclude-filter type="annotation"
+                                expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <!--<import resource="classpath:spring/spring-dbconn.xml"/>-->
+    <import resource="classpath:spring/spring-dubbo.xml"/>
+    <!--<import resource="classpath:spring/spring-activiti.xml"/>-->
+    <import resource="classpath:spring/spring-ehcache.xml"/>
+    <!--<import resource="classpath:spring/spring-redis.xml"/>-->
+
+    <!-- Spring 启动容器 手动获取bean -->
+    <bean id="springInit" class="com.vijay.distributed.core.spring.SpringInit"></bean>
+
+    <!--启动@AspectJ支持  关闭注解 -->
+    <!-- 	<aop:aspectj-autoproxy proxy-target-class="true"/> -->
+    <bean id="exceptionHandler" class="com.vijay.distributed.core.aop.ExceptionHandler"></bean>
+    <aop:config>
+        <aop:aspect id="exceptionAspect" ref="exceptionHandler">
+            <aop:pointcut id="aspect"
+                          expression="execution(public * com.vijay.distributed.*.service..*(com.vijay.distributed.core.bean.ParamBean))"/>
+            <aop:around method="around" pointcut-ref="aspect"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+    <!-- Activiti 流程引擎配置 -->
+
+    <bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
+        <!--数据源-->
+        <property name="dataSource" ref="dataSource"/>
+        <!--事务管理 -->
+        <property name="transactionManager" ref="txManager"/>
+        <!--构建引擎时，检查并在需要时更新表结构。表结构不存在则会创建-->
+        <property name="databaseSchemaUpdate" value="true"/>
+        <!--JobExecutor不随流程引擎启动-->
+        <property name="jobExecutorActivate" value="false"/>
+        <!--自动部署-->
+        <property name="deploymentResources" value="classpath*:/flow/*.bpmn"/>
+        <!--不生成流程图-->
+        <!--<property name="createDiagramOnDeploy" value="false" />-->
+    </bean>
+
+    <bean id="processEngine" class="org.activiti.spring.ProcessEngineFactoryBean">
+        <property name="processEngineConfiguration" ref="processEngineConfiguration"/>
+    </bean>
+</beans>

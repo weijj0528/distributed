@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
  */
 public class BaseFront {
 
-    protected Logger logger;
+    protected static Logger logger;
 
     public BaseFront() {
         logger = Logger.getLogger(this.getClass());

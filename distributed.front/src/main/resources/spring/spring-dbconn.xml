@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- druid -->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+        <property name="url" value="${db.url}" />
+        <property name="driverClassName" value="${db.driverClassName}" />
+        <property name="username" value="${db.username}" />
+        <property name="password" value="${db.pwd}" />
+
+        <property name="initialSize" value="${db.initialSize}" />
+        <property name="maxActive" value="${db.maxActive}" />
+        <property name="minIdle" value="${db.minIdle}" />
+        <property name="maxWait" value="${db.maxWait}" />
+        <property name="useUnfairLock" value="${db.useUnfairLock}" />
+
+        <property name="poolPreparedStatements" value="${db.poolPreparedStatements}" />
+        <property name="maxPoolPreparedStatementPerConnectionSize" value="${db.maxPoolPreparedStatementPerConnectionSize}" />
+
+        <property name="validationQuery" value="${db.validationQuery}" />
+        <property name="validationQueryTimeout" value="${db.validationQueryTimeout}" />
+        <property name="testOnBorrow" value="${db.testOnBorrow}" />
+        <property name="testOnReturn" value="${db.testOnReturn}" />
+
+        <property name="testWhileIdle" value="${db.testWhileIdle}" />
+        <property name="timeBetweenEvictionRunsMillis" value="${db.timeBetweenEvictionRunsMillis}" />
+        <property name="minEvictableIdleTimeMillis" value="${db.minEvictableIdleTimeMillis}" />
+        <property name="connectionInitSqls" >
+            <list>
+                <value>set names utf8mb4;</value>
+            </list>
+        </property>
+        <!-- 		<property name="connectionProperties" value="clientEncoding=UTF-8"/> -->
+    </bean>
+
+    <!-- 对数据源进行事务管理 -->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+          p:dataSource-ref="dataSource"/>
+    <tx:annotation-driven transaction-manager="txManager"/>
+    <!-- mybatis文件配置，扫描所有mapper文件 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+          p:dataSource-ref="dataSource" p:configLocation="classpath:config/mybatis-configuration.xml"
+          p:mapperLocations="classpath:sqlMapper/*.xml">
+        <property name="typeAliasesPackage" value="com.isea533.mybatis.model"/>
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        <value>
+                            helperDialect=mysql
+                            reasonable=true
+                            supportMethodsArguments=true
+                            params=count=countSql
+                            autoRuntimeDialect=true
+                        </value>
+                    </property>
+                </bean>
+            </array>
+        </property>
+    </bean>
+
+    <!-- 定义myBatis模板，更好的访问数据库 -->
+    <bean class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg ref="sqlSessionFactory"></constructor-arg>
+    </bean>
+
+    <!-- 可以将包下所有的接口，自动转换为Spring下的Bean，前提条件是在SQL配置文件中定义过 -->
+
+    <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.vijay.distributed.*.mapper"/>
+        <property name="markerInterface" value="tk.mybatis.mapper.common.Mapper"/>
+    </bean>
+
+</beans>
