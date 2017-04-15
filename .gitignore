@@ -10,6 +10,9 @@ tmp/
 *~.nib
 local.properties
 .idea/
+.dubbox/
+.logs/
+.out/
 .settings/
 .loadpath
 .recommenders
