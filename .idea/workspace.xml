@@ -2,45 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4001cbd-e0f3-4e04-b82a-5c5cf5ff6345" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/UnauthorizedException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/build.gradle" afterPath="$PROJECT_DIR$/base/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.core/build.gradle" afterPath="$PROJECT_DIR$/distributed.core/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.front/src/main/resources/config/release/conf.properties" afterPath="$PROJECT_DIR$/distributed.front/src/main/resources/config/release/conf.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.front/src/main/resources/config/snapshot/conf.properties" afterPath="$PROJECT_DIR$/distributed.front/src/main/resources/config/snapshot/conf.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.front/src/main/resources/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/distributed.front/src/main/resources/spring/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.front/src/main/resources/spring/spring-ehcache.xml" afterPath="$PROJECT_DIR$/distributed.front/src/main/resources/spring/spring-ehcache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.front/src/main/resources/spring/spring-redis.xml" afterPath="$PROJECT_DIR$/distributed.front/src/main/resources/spring/spring-redis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.server.demo/src/main/resources/config/release/conf.properties" afterPath="$PROJECT_DIR$/distributed.server.demo/src/main/resources/config/release/conf.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.server.demo/src/main/resources/config/snapshot/conf.properties" afterPath="$PROJECT_DIR$/distributed.server.demo/src/main/resources/config/snapshot/conf.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.server.demo/src/main/resources/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/distributed.server.demo/src/main/resources/spring/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.server.demo/src/main/resources/spring/spring-ehcache.xml" afterPath="$PROJECT_DIR$/distributed.server.demo/src/main/resources/spring/spring-ehcache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.server.demo/src/main/resources/spring/spring-redis.xml" afterPath="$PROJECT_DIR$/distributed.server.demo/src/main/resources/spring/spring-redis.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/vijay/base/util/DateUtils.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/DateUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/vijay/base/util/StrUtils.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/StrUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/annotation/LoginCheck.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/annotation/LoginCheck.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/annotation/RemoveLoginCheck.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/annotation/RemoveLoginCheck.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/aop/ExceptionHandler.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/aop/ExceptionHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/base/BaseController.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/base/BaseController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/base/BaseFront.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/base/BaseFront.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/base/BaseService.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/base/BaseService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/bean/FrontParamBean.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/bean/FrontParamBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/bean/ParamBean.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/bean/ParamBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/bean/ResultBean.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/bean/ResultBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/cache/Cache.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/cache/Cache.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/cache/impl/EhcacheImpl.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/cache/impl/EhcacheImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/cache/impl/RedisCacheImpl.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/cache/impl/RedisCacheImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/exception/BadRequestException.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/BadRequestException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/exception/BaseException.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/BaseException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/exception/ErrorMsgEnum.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ErrorMsgEnum.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/exception/ErrorMsgException.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ErrorMsgException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/exception/ExceptionCause.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ExceptionCause.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/exception/NoAuthException.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/NoAuthException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/exception/OvertimeException.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/OvertimeException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/spring/SpringInit.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/spring/SpringInit.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/system/SysConfig.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/system/SysConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/util/JsonUtils.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/JsonUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/util/Transcoder.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/Transcoder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ExceptionCause.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ExceptionCause.java" />
     </list>
     <ignored path="distributed.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,7 +65,72 @@
           <activation />
         </task>
         <projects_view>
-          <tree_state />
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="distributed" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="distributed" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":base" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="distributed" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":base" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="distributed" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":base" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="publishing" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
         </projects_view>
       </state>
     </system>
@@ -117,28 +146,7 @@
     <favorites_list name="distributed" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/distributed.core/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2496">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1235,9 +1243,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/util/JsonUtils.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/bean/ResultBean.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/bean/FrontParamBean.java" />
         <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/vijay/distributed/core/bean/ParamBean.java" />
         <option value="$PROJECT_DIR$/distributed.front/src/main/java/com/vijay/distributed/front/service/FronService.java" />
         <option value="$PROJECT_DIR$/distributed.front/src/main/resources/spring/spring.xml" />
@@ -1286,6 +1291,9 @@
         <option value="$PROJECT_DIR$/base/build.gradle" />
         <option value="$PROJECT_DIR$/distributed.core/build.gradle" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/UnauthorizedException.java" />
+        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ErrorMsgEnum.java" />
+        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ExceptionCause.java" />
       </list>
     </option>
   </component>
@@ -1362,6 +1370,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1380,27 +1392,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1412,21 +1406,22 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kuaidilaiye-front" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\workspace\distributed\distributed.front\src\main\resources\spring" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.distributed.core.exception" />
+      <recent name="com.vijay.distributed.core.annotation" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\workspace\distributed\distributed.server.demo\src\main\resources" />
       <recent name="F:\workspace\distributed\distributed.front\src\main\resources\config\snapshot" />
       <recent name="F:\workspace\distributed\distributed.front\src\main\resources\config\release" />
       <recent name="F:\workspace\distributed\distributed.server.demo\src\main\java\com\vijay\distributed\demo" />
       <recent name="F:\workspace\distributed\distributed.server.demo" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.vijay.distributed.core.annotation" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\workspace\distributed\distributed.front\src\main\resources\spring" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.front">
@@ -2126,7 +2121,8 @@
       <workItem from="1498962866225" duration="17000" />
       <workItem from="1498965008172" duration="960000" />
       <workItem from="1499094539948" duration="1502000" />
-      <workItem from="1499177399583" duration="722000" />
+      <workItem from="1499177399583" duration="2378000" />
+      <workItem from="1499181368708" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1492007500906</created>
@@ -2177,11 +2173,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492269273211</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="基础结构调整">
+      <created>1499178162740</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1499178162740</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46349000" />
+    <option name="totallyTimeSpent" value="48011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -2190,21 +2193,21 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5042644" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5042644" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68546635" sideWeight="0.49573562" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23175965" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2054721" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20386267" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33530042" sideWeight="0.49566162" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33476394" sideWeight="0.49566162" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2238,7 +2241,8 @@
     <MESSAGE value="前置与demo完善" />
     <MESSAGE value="忽略调整" />
     <MESSAGE value="前置调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="前置调整" />
+    <MESSAGE value="基础结构调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="基础结构调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2251,27 +2255,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/BadRequestException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/system/SysConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/base/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/vijay/distributed.core/1.0-SNAPSHOT/distributed.core-1.0-SNAPSHOT.jar!/com/vijay/distributed/core/base/BaseController.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -2577,6 +2560,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -2585,15 +2575,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2496">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ErrorMsgEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="-189">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ExceptionCause.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/UnauthorizedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
