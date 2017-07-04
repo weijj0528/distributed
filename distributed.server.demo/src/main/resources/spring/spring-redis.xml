@@ -25,7 +25,7 @@
     </bean>
 
     <!-- redis缓存 -->
-    <bean id="redisCache" class="com.vijay.distributed.core.cache.impl.RedisCacheImpl"
+    <bean id="redisCache" class="RedisCacheImpl"
           scope="singleton" lazy-init="true">
         <property name="redisTemplate">
             <ref local="redisTemplate"/>

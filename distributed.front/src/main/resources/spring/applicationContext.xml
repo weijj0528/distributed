@@ -13,7 +13,7 @@
     <context:property-placeholder location="classpath:config/conf.properties"/>
 
     <!-- 系统启动加载 配置文件 -->
-    <bean class="com.vijay.distributed.core.system.SysConfig" init-method="init">
+    <bean class="SysConfig" init-method="init">
         <property name="location" value="classpath:config/conf.properties"/>
     </bean>
 
@@ -30,15 +30,15 @@
     <!--<import resource="classpath:spring/spring-redis.xml"/>-->
 
     <!-- Spring 启动容器 手动获取bean -->
-    <bean id="springInit" class="com.vijay.distributed.core.spring.SpringInit"></bean>
+    <bean id="springInit" class="SpringInit"></bean>
 
     <!--启动@AspectJ支持  关闭注解 -->
     <!-- 	<aop:aspectj-autoproxy proxy-target-class="true"/> -->
-    <bean id="exceptionHandler" class="com.vijay.distributed.core.aop.ExceptionHandler"></bean>
+    <bean id="exceptionHandler" class="com.distributed.core.aop.ExceptionHandler"></bean>
     <aop:config>
         <aop:aspect id="exceptionAspect" ref="exceptionHandler">
             <aop:pointcut id="aspect"
-                          expression="execution(public * com.vijay.distributed.*.service..*(com.vijay.distributed.core.bean.ParamBean))"/>
+                          expression="execution(public * com.vijay.distributed.*.service..*(ParamBean))"/>
             <aop:around method="around" pointcut-ref="aspect"/>
         </aop:aspect>
     </aop:config>

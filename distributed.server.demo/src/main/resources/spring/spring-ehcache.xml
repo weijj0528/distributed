@@ -20,7 +20,7 @@
     </bean>
 
     <!-- ehcache -->
-    <bean id="ehCache" class="com.vijay.distributed.core.cache.impl.EhcacheImpl" scope="singleton">
+    <bean id="ehCache" class="EhcacheImpl" scope="singleton">
         <property name="cache">
             <ref local="ehCacheClient"/>
         </property>

@@ -11,8 +11,8 @@ tmp/
 local.properties
 .idea/
 .dubbox/
-.logs/
-.out/
+logs
+out
 .settings/
 .loadpath
 .recommenders

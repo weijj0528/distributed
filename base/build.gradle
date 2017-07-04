@@ -2,8 +2,8 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
-group 'com.vijay'
-version '1.0-SNAPSHOT'
+group 'com.william'
+version '1.0'
 
 sourceCompatibility = 1.5
 
@@ -124,10 +124,10 @@ publishing {
     }
     repositories {
         maven{
-            url "http://192.168.1.131:8081/repository/maven-releases"
+            url "http://lovejiayuan.cn:8081/repository/maven-releases/"
             credentials {
                 username 'admin'
-                password 'admin123'
+                password 'weijj0528'
             }
         }
     }
