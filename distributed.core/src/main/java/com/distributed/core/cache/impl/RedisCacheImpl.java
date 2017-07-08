@@ -3,7 +3,7 @@ package com.distributed.core.cache.impl;
 import com.distributed.core.base.BaseFront;
 import com.distributed.core.cache.Cache;
 import com.distributed.core.exception.ErrorMsgException;
-import com.distributed.core.util.Transcoder;
+import com.william.base.util.Transcoder;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.StringRedisTemplate;
