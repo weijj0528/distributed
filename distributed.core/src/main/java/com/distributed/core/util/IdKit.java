@@ -1,4 +1,4 @@
-package com.william.base.util;
+package com.distributed.core.util;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.CountDownLatch;

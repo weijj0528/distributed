@@ -1,4 +1,4 @@
-package com.william.base.util;
+package com.distributed.core.util;
 import java.net.NetworkInterface;
 import java.nio.ByteBuffer;
 import java.util.Date;

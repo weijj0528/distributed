@@ -12,24 +12,20 @@ public class TokenUtils {
     public static final String ENCRYPT_KEY = "NorthFish";
 
     public static String createKey(String uid) throws Exception {
-        byte[] bytes = EncryptUtil.encryptAES(uid, ENCRYPT_KEY);
-        return new String(bytes, CHARSET);
+        return EncryptUtil.encryptAES(uid, ENCRYPT_KEY);
     }
 
     public static String parseKeyToUid(String key) throws Exception {
-        byte[] bytes = EncryptUtil.decryptAES(key.getBytes(), ENCRYPT_KEY);
-        return new String(bytes, CHARSET);
+        return EncryptUtil.decryptAES(key, ENCRYPT_KEY);
     }
 
     public static String createSid(String sessionId, String key) throws Exception {
         String sid = sessionId + "__" + key;
-        byte[] bytes = EncryptUtil.encryptAES(sid, ENCRYPT_KEY);
-        return new String(bytes, CHARSET);
+        return EncryptUtil.encryptAES(sid, ENCRYPT_KEY);
     }
 
     public static String parseSidToKey(String sid) throws Exception {
-        byte[] bytes = EncryptUtil.decryptAES(sid.getBytes(), ENCRYPT_KEY);
-        sid = new String(bytes, CHARSET);
+        sid = EncryptUtil.decryptAES(sid, ENCRYPT_KEY);
         String[] split = sid.split("__");
         if (split.length != 2)
             throw new ErrorMsgException("SID错误，解析出错：" + sid);
@@ -38,6 +34,19 @@ public class TokenUtils {
 
     public static String parseSidToUid(String sid) throws Exception {
         return parseKeyToUid(parseSidToKey(sid));
+    }
+
+    public static void main(String[] args) throws Exception {
+        String key = createKey("1");
+        System.out.println("key:" + key);
+        String uid = parseKeyToUid(key);
+        System.out.println("uid:" + uid);
+        String sid = createSid("asdfasgasgwehs", key);
+        System.out.println("sid:" + sid);
+        String k = parseSidToKey(sid);
+        System.out.println("k:" + k);
+        String u = parseSidToUid(sid);
+        System.out.println("u:" + u);
     }
 
 }
