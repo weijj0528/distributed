@@ -56,7 +56,7 @@ dependencies {
     // dubbox
     compile group: 'com.alibaba', name: 'dubbo', version: '2.8.4'
     compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.4.9'
-    compile group: 'zkclient', name: 'zkclient', version: '0.3'
+    compile group: 'com.101tec', name: 'zkclient', version: '0.3'
     compile group: 'com.esotericsoftware.kryo', name: 'kryo', version: '2.24.0'
     compile group: 'de.javakaffee', name: 'kryo-serializers', version: '0.26'
     // 缓存
@@ -112,6 +112,8 @@ publishing {
                     depNode.appendNode('groupId', dep.getGroup())
                     depNode.appendNode('artifactId', dep.getName())
                     depNode.appendNode('version', dep.getVersion())
+//                    depNode.appendNode('classifier', dep.getClassifier())
+//                    println dep.getClassifier()
                     depNode.appendNode('scope', 'compile')
                 }
             }
