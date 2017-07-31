@@ -2,6 +2,7 @@ package com.william.base.util;
 
 import org.apache.commons.lang.StringUtils;
 
+import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.ParseException;
@@ -270,6 +271,211 @@ public class DateUtils {
         String year = new DecimalFormat("#").format(day / 365f);
         return Integer.valueOf(year);
     }
+
+    /**
+     * 获取当指定日期开始时间
+     *
+     * @return
+     */
+    public static Timestamp getFirstDayOfDay(Calendar current) {
+        current.set(Calendar.HOUR_OF_DAY, 0);
+        current.clear(Calendar.MINUTE);
+        current.clear(Calendar.SECOND);
+        return Timestamp.valueOf(formatDate(current));
+    }
+
+    /**
+     * 获取当指定日期开始时间
+     *
+     * @return
+     */
+    public static Timestamp getEndDayOfDay(Calendar current) {
+        current.set(Calendar.HOUR_OF_DAY, 0);
+        current.clear(Calendar.MINUTE);
+        current.clear(Calendar.SECOND);
+        current.add(Calendar.DATE, 1);
+        current.add(Calendar.SECOND, -1);
+        return Timestamp.valueOf(formatDate(current));
+    }
+
+    /**
+     * 获取当指定日期所在周的第一天时间
+     *
+     * @return
+     */
+    public static Timestamp getFirstDayOfWeek(Calendar current) {
+        // 中国默认周一为第一天
+        current.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
+        current.set(Calendar.HOUR_OF_DAY, 0);
+        current.clear(Calendar.MINUTE);
+        current.clear(Calendar.SECOND);
+        return Timestamp.valueOf(formatDate(current));
+    }
+
+    /**
+     * 获取指定日期所在周的结束时间
+     *
+     * @return
+     */
+    public static Timestamp getEndDayOfWeek(Calendar current) {
+        // 中国默认周一为第一天
+        current.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
+        current.add(Calendar.DATE, 7);
+        current.set(Calendar.HOUR_OF_DAY, 0);
+        current.clear(Calendar.MINUTE);
+        current.clear(Calendar.SECOND);
+        current.add(Calendar.SECOND,-1);
+        return Timestamp.valueOf(formatDate(current));
+    }
+
+    /**
+     * 获取指定日期所在月的第一天时间
+     *
+     * @return
+     */
+    public static Timestamp getFirstDayOfMonth(Calendar current) {
+        current.add(Calendar.MONTH, 0);
+        current.set(Calendar.DAY_OF_MONTH, 1);
+        current.set(Calendar.HOUR_OF_DAY, 0);
+        current.clear(Calendar.MINUTE);
+        current.clear(Calendar.SECOND);
+        return Timestamp.valueOf(formatDate(current));
+    }
+
+    /**
+     * 获取指定日期所在月的结束时间
+     *
+     * @return
+     */
+    public static Timestamp getEndDayOfMonth(Calendar current) {
+        current.add(Calendar.MONTH, 1);
+        current.set(Calendar.DAY_OF_MONTH, 1);
+        current.set(Calendar.HOUR_OF_DAY, 0);
+        current.clear(Calendar.MINUTE);
+        current.clear(Calendar.SECOND);
+        current.add(Calendar.SECOND,-1);
+        return Timestamp.valueOf(formatDate(current));
+    }
+
+    /**
+     * 获取指定日期所在季度的第一天时间
+     *
+     * @return
+     */
+    public static Timestamp getFirstDayOfQuarter(Calendar current) {
+        int quarter = getQuarter(current.getTimeInMillis());
+        switch (quarter) {
+            case 1:
+                return getFirstDayOfYear(current);
+            case 2:
+                current.set(Calendar.MONTH, 3); // 4月开始时间
+                return getFirstDayOfMonth(current);
+            case 3:
+                current.set(Calendar.MONTH, 6); // 7月开始时间
+                return getFirstDayOfMonth(current);
+            case 4:
+                current.set(Calendar.MONTH, 9); // 10月开始时间
+                return getFirstDayOfMonth(current);
+        }
+        return null;
+    }
+
+    /**
+     * 获取指定日期所在季度的结束时间
+     *
+     * @return
+     */
+    public static Timestamp getEndDayOfQuarter(Calendar current) {
+        int quarter = getQuarter(current.getTimeInMillis());
+        switch (quarter) {
+            case 1:
+                current.set(Calendar.MONTH, 2); // 3月结束时间
+                return getEndDayOfMonth(current);
+            case 2:
+                current.set(Calendar.MONTH, 5); // 6月结束时间
+                return getEndDayOfMonth(current);
+            case 3:
+                current.set(Calendar.MONTH, 8); // 9月结束时间
+                return getEndDayOfMonth(current);
+            case 4:
+                return getEndDayOfYear(current);
+        }
+        return null;
+    }
+
+    /****
+     *获取当前 日期 季度
+     * @param millis
+     * @return
+     */
+    public static int getQuarter(long millis) {
+        Calendar cal = Calendar.getInstance(Locale.CHINA);
+        if (millis > 0) {
+            cal.setTimeInMillis(millis);
+        }
+        int quarter = 0;
+        int currentMonth = cal.get(Calendar.MONTH) + 1;
+        if (currentMonth >= 1 && currentMonth <= 3) {
+            quarter = 1;
+        } else if (currentMonth >= 4 && currentMonth <= 6) {
+            quarter = 2;
+        } else if (currentMonth >= 7 && currentMonth <= 9) {
+            quarter = 3;
+        } else if (currentMonth >= 10 && currentMonth <= 12) {
+            quarter = 4;
+        }
+        return quarter;
+    }
+
+
+    /**
+     * 获取指定日期所在年的第一天
+     *
+     * @return
+     */
+    public static Timestamp getFirstDayOfYear(Calendar current) {
+        int currentYear = current.get(Calendar.YEAR);
+        current.clear();
+        current.set(Calendar.YEAR, currentYear);
+        return Timestamp.valueOf(formatDate(current));
+    }
+
+    /**
+     * 获取指定日期所在年的结束时间
+     *
+     * @return
+     */
+    public static Timestamp getEndDayOfYear(Calendar current) {
+        int currentYear = current.get(Calendar.YEAR);
+        current.clear();
+        current.set(Calendar.YEAR, currentYear + 1);
+        current.add(Calendar.SECOND,-1);
+        return Timestamp.valueOf(formatDate(current));
+    }
+
+    public static int getCurrentMonth() {
+        Calendar current = Calendar.getInstance();
+        int i = current.get(Calendar.MONTH);
+        return i + 1;
+    }
+
+    public static int getCurrentYear() {
+        Calendar current = Calendar.getInstance();
+        int i = current.get(Calendar.YEAR);
+        return i;
+    }
+
+    /**
+     * 格式化时间
+     *
+     * @return String 时间字符串
+     */
+    public static String formatDate(Calendar calendar) {
+        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String sDate = f.format(calendar.getTime());
+        return sDate;
+    }
+
 
     // TEST
     public static void main(String args[]) throws Exception {
