@@ -217,11 +217,8 @@ public class HttpClientUtils {
         charset = StringUtils.isEmpty(charset) ? "UTF-8" : charset;
         try {
             httpPost = new HttpPost(url);
-            httpPost.addHeader("Content-Type", "application/json;charset=" + charset);
-//            httpPost.addHeader("Content-Type", "application/html;charset=" + charset);
-//            httpPost.addHeader("Content-Type", "text/xml;charset=" + charset);
             if (headers != null && !headers.isEmpty()) {
-                Iterator<Entry<String, String>> iterator = param.entrySet().iterator();
+                Iterator<Entry<String, String>> iterator = headers.entrySet().iterator();
                 while (iterator.hasNext()) {
                     Entry<String, String> entry = iterator.next();
                     httpPost.addHeader(entry.getKey(), String.valueOf(entry.getValue()));
