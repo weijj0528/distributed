@@ -73,15 +73,12 @@ public class HttpClientUtils {
          * 取消检测SSL 验证效验
          */
         X509TrustManager manager = new X509TrustManager() {
-            @Override
             public void checkClientTrusted(X509Certificate[] xcs, String string) {
             }
 
-            @Override
             public void checkServerTrusted(X509Certificate[] xcs, String string) {
             }
 
-            @Override
             public X509Certificate[] getAcceptedIssuers() {
                 return null;
             }
@@ -94,7 +91,6 @@ public class HttpClientUtils {
             e.printStackTrace();
         }
         hostnameVerifier = new HostnameVerifier() {
-            @Override
             public boolean verify(String hostname, SSLSession session) {
                 return true;
             }
@@ -121,7 +117,7 @@ public class HttpClientUtils {
      * 关闭连接 池
      * 请勿轻易使用
      *
-     * @param closeableHttpClient
+     * @param httpClient
      * @author Johnson.Jia
      */
     public static void closeHttpClient(CloseableHttpClient httpClient) {
@@ -252,8 +248,7 @@ public class HttpClientUtils {
     /**
      * Http get 请求
      *
-     * @param url     默认字符集 utf8
-     * @param charset
+     * @param url 默认字符集 utf8
      * @return
      * @author Johnson.Jia
      */
