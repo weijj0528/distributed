@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4001cbd-e0f3-4e04-b82a-5c5cf5ff6345" name="Default" comment="日期工具类调整">
+    <list default="true" id="f4001cbd-e0f3-4e04-b82a-5c5cf5ff6345" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/DateUtils.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/DateUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/build.gradle" afterPath="$PROJECT_DIR$/base/build.gradle" />
     </list>
     <ignored path="distributed.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,7 +67,72 @@
           <activation />
         </task>
         <projects_view>
-          <tree_state />
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="distributed" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="distributed" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":base" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="distributed" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":base" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="distributed" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":base" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="publishing" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
         </projects_view>
       </state>
     </system>
@@ -87,8 +152,18 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/distributed.core/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2160">
-              <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+            <state relative-caret-position="1728">
+              <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/base/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="40" column="83" selection-start-line="40" selection-start-column="83" selection-end-line="40" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -99,45 +174,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
               <caret line="14" column="25" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#788#789#0" expanded="false" />
-                <element signature="e#817#818#0" expanded="false" />
-                <element signature="e#861#862#0" expanded="false" />
-                <element signature="e#897#898#0" expanded="false" />
-                <element signature="e#930#931#0" expanded="false" />
-                <element signature="e#959#960#0" expanded="false" />
-                <element signature="e#1003#1004#0" expanded="false" />
-                <element signature="e#1039#1040#0" expanded="false" />
-                <element signature="e#1073#1074#0" expanded="false" />
-                <element signature="e#1103#1104#0" expanded="false" />
-                <element signature="e#1149#1150#0" expanded="false" />
-                <element signature="e#1187#1188#0" expanded="false" />
-                <element signature="e#1223#1224#0" expanded="false" />
-                <element signature="e#1251#1252#0" expanded="false" />
-                <element signature="e#1297#1298#0" expanded="false" />
-                <element signature="e#1331#1332#0" expanded="false" />
-                <element signature="e#1360#1361#0" expanded="false" />
-                <element signature="e#1387#1388#0" expanded="false" />
-                <element signature="e#1425#1426#0" expanded="false" />
-                <element signature="e#1457#1458#0" expanded="false" />
-                <element signature="e#1488#1489#0" expanded="false" />
-                <element signature="e#1515#1516#0" expanded="false" />
-                <element signature="e#1555#1556#0" expanded="false" />
-                <element signature="e#1587#1588#0" expanded="false" />
-                <element signature="e#1617#1618#0" expanded="false" />
-                <element signature="e#1643#1644#0" expanded="false" />
-                <element signature="e#1681#1682#0" expanded="false" />
-                <element signature="e#1706#1707#0" expanded="false" />
-                <element signature="e#2092#2093#0" expanded="false" />
-                <element signature="e#2118#2119#0" expanded="false" />
-                <element signature="e#2156#2157#0" expanded="false" />
-                <element signature="e#2186#2187#0" expanded="false" />
-                <element signature="e#2216#2217#0" expanded="false" />
-                <element signature="e#2242#2243#0" expanded="false" />
-                <element signature="e#2280#2281#0" expanded="false" />
-                <element signature="e#2310#2311#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,20 +182,9 @@
       <file leaf-file-name="HttpClientUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/HttpClientUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2349">
+            <state relative-caret-position="2430">
               <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2504#2505#0" expanded="false" />
-                <element signature="e#2547#2548#0" expanded="false" />
-                <element signature="e#2833#3005#0" expanded="false" />
-                <element signature="e#3004#3005#0" expanded="false" />
-                <element signature="e#4130#4131#0" expanded="false" />
-                <element signature="e#4179#4180#0" expanded="false" />
-                <element signature="e#4923#4938#0" expanded="false" />
-                <element signature="e#8521#8522#0" expanded="false" />
-                <element signature="e#8562#8563#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,7 +192,7 @@
       <file leaf-file-name="StrUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/StrUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
+            <state relative-caret-position="945">
               <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -175,41 +201,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DateUtils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DateUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/DateUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="408" column="14" selection-start-line="408" selection-start-column="14" selection-end-line="408" selection-end-column="14" />
-              <folding>
-                <element signature="e#2343#2344#0" expanded="true" />
-                <element signature="e#2395#2396#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/bean/ResultBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="31" column="29" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#2330#2331#0" expanded="false" />
-                <element signature="e#2356#2357#0" expanded="false" />
-                <element signature="e#2394#2395#0" expanded="false" />
-                <element signature="e#2424#2425#0" expanded="false" />
-                <element signature="e#2455#2456#0" expanded="false" />
-                <element signature="e#2482#2483#0" expanded="false" />
-                <element signature="e#2522#2523#0" expanded="false" />
-                <element signature="e#2554#2555#0" expanded="false" />
-                <element signature="e#2591#2592#0" expanded="false" />
-                <element signature="e#2620#2621#0" expanded="false" />
-                <element signature="e#2667#2668#0" expanded="false" />
-                <element signature="e#2732#2733#0" expanded="false" />
-                <element signature="e#2780#2781#0" expanded="false" />
-                <element signature="e#2816#2817#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="371">
+              <caret line="411" column="52" selection-start-line="411" selection-start-column="52" selection-end-line="411" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -229,10 +226,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="e#248#249#0" expanded="false" />
-                <element signature="e#294#295#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -242,12 +236,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
               <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-              <folding>
-                <element signature="e#269#270#0" expanded="false" />
-                <element signature="e#283#284#0" expanded="false" />
-                <element signature="e#320#321#0" expanded="false" />
-                <element signature="e#337#338#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -257,16 +246,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
               <caret line="11" column="26" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="26" />
-              <folding>
-                <element signature="e#766#767#0" expanded="false" />
-                <element signature="e#784#785#0" expanded="false" />
-                <element signature="e#821#822#0" expanded="false" />
-                <element signature="e#844#845#0" expanded="false" />
-                <element signature="e#871#872#0" expanded="false" />
-                <element signature="e#888#889#0" expanded="false" />
-                <element signature="e#923#924#0" expanded="false" />
-                <element signature="e#944#945#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1084,7 +1064,6 @@
         <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/Transcoder.java" />
         <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/WebUtils.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/HttpClientUtils.java" />
-        <option value="$PROJECT_DIR$/base/build.gradle" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/ObjectId.java" />
         <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/ObjectId.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
@@ -1097,6 +1076,7 @@
         <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/StrUtils.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/DateUtils.java" />
+        <option value="$PROJECT_DIR$/base/build.gradle" />
       </list>
     </option>
   </component>
@@ -1174,13 +1154,55 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distributed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distributed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distributed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distributed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distributed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distributed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1211,24 +1233,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.distributed:base [publish]">
-    <configuration default="false" name="distributed:base [publishMavenJavaPublicationToMavenRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/base" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishMavenJavaPublicationToMavenRepository" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
     <configuration default="false" name="distributed:base [publishMavenJavaPublicationToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1295,6 +1299,24 @@
         <option name="taskNames">
           <list>
             <option value="generatePomFileForMavenJavaPublication" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="distributed:base [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/base" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -1850,19 +1872,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.front" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.distributed:base [publishMavenJavaPublicationToMavenRepository]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.distributed:base [publishMavenJavaPublicationToMavenLocal]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.distributed:base [publish]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.distributed:base [publishToMavenLocal]" />
-      <item index="5" class="java.lang.String" itemvalue="Gradle.distributed:base [generatePomFileForMavenJavaPublication]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.distributed:base [publishMavenJavaPublicationToMavenLocal]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.distributed:base [publish]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.distributed:base [publishToMavenLocal]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.distributed:base [generatePomFileForMavenJavaPublication]" />
+      <item index="5" class="java.lang.String" itemvalue="Gradle.distributed:base [build]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.distributed:base [generatePomFileForMavenJavaPublication]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.distributed:base [publishToMavenLocal]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.distributed:base [publish]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.distributed:base [publishMavenJavaPublicationToMavenLocal]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.distributed:base [publishMavenJavaPublicationToMavenRepository]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.distributed:base [build]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.distributed:base [generatePomFileForMavenJavaPublication]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.distributed:base [publishToMavenLocal]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.distributed:base [publish]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.distributed:base [publishMavenJavaPublicationToMavenLocal]" />
       </list>
     </recent_temporary>
   </component>
@@ -1914,7 +1936,8 @@
       <workItem from="1499585958272" duration="2192000" />
       <workItem from="1499782037834" duration="1675000" />
       <workItem from="1500108976659" duration="2917000" />
-      <workItem from="1501511272141" duration="229000" />
+      <workItem from="1501511272141" duration="292000" />
+      <workItem from="1501685984722" duration="41000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1492007500906</created>
@@ -2028,11 +2051,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500127146312</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="日期工具类调整">
+      <created>1501511506829</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1501511506829</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70940000" />
+    <option name="totallyTimeSpent" value="71044000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2061,10 +2091,10 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54013014" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20362474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20362474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35607675" sideWeight="0.48" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68112797" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2172,13 +2202,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1141">
           <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1416">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -2305,7 +2328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2341,15 +2363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2357,23 +2370,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="31" column="29" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2330#2331#0" expanded="false" />
-            <element signature="e#2356#2357#0" expanded="false" />
-            <element signature="e#2394#2395#0" expanded="false" />
-            <element signature="e#2424#2425#0" expanded="false" />
-            <element signature="e#2455#2456#0" expanded="false" />
-            <element signature="e#2482#2483#0" expanded="false" />
-            <element signature="e#2522#2523#0" expanded="false" />
-            <element signature="e#2554#2555#0" expanded="false" />
-            <element signature="e#2591#2592#0" expanded="false" />
-            <element signature="e#2620#2621#0" expanded="false" />
-            <element signature="e#2667#2668#0" expanded="false" />
-            <element signature="e#2732#2733#0" expanded="false" />
-            <element signature="e#2780#2781#0" expanded="false" />
-            <element signature="e#2816#2817#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2389,10 +2386,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#248#249#0" expanded="false" />
-            <element signature="e#294#295#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2400,12 +2394,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="e#269#270#0" expanded="false" />
-            <element signature="e#283#284#0" expanded="false" />
-            <element signature="e#320#321#0" expanded="false" />
-            <element signature="e#337#338#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2413,16 +2402,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#766#767#0" expanded="false" />
-            <element signature="e#784#785#0" expanded="false" />
-            <element signature="e#821#822#0" expanded="false" />
-            <element signature="e#844#845#0" expanded="false" />
-            <element signature="e#871#872#0" expanded="false" />
-            <element signature="e#888#889#0" expanded="false" />
-            <element signature="e#923#924#0" expanded="false" />
-            <element signature="e#944#945#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2430,70 +2410,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="14" column="25" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#788#789#0" expanded="false" />
-            <element signature="e#817#818#0" expanded="false" />
-            <element signature="e#861#862#0" expanded="false" />
-            <element signature="e#897#898#0" expanded="false" />
-            <element signature="e#930#931#0" expanded="false" />
-            <element signature="e#959#960#0" expanded="false" />
-            <element signature="e#1003#1004#0" expanded="false" />
-            <element signature="e#1039#1040#0" expanded="false" />
-            <element signature="e#1073#1074#0" expanded="false" />
-            <element signature="e#1103#1104#0" expanded="false" />
-            <element signature="e#1149#1150#0" expanded="false" />
-            <element signature="e#1187#1188#0" expanded="false" />
-            <element signature="e#1223#1224#0" expanded="false" />
-            <element signature="e#1251#1252#0" expanded="false" />
-            <element signature="e#1297#1298#0" expanded="false" />
-            <element signature="e#1331#1332#0" expanded="false" />
-            <element signature="e#1360#1361#0" expanded="false" />
-            <element signature="e#1387#1388#0" expanded="false" />
-            <element signature="e#1425#1426#0" expanded="false" />
-            <element signature="e#1457#1458#0" expanded="false" />
-            <element signature="e#1488#1489#0" expanded="false" />
-            <element signature="e#1515#1516#0" expanded="false" />
-            <element signature="e#1555#1556#0" expanded="false" />
-            <element signature="e#1587#1588#0" expanded="false" />
-            <element signature="e#1617#1618#0" expanded="false" />
-            <element signature="e#1643#1644#0" expanded="false" />
-            <element signature="e#1681#1682#0" expanded="false" />
-            <element signature="e#1706#1707#0" expanded="false" />
-            <element signature="e#2092#2093#0" expanded="false" />
-            <element signature="e#2118#2119#0" expanded="false" />
-            <element signature="e#2156#2157#0" expanded="false" />
-            <element signature="e#2186#2187#0" expanded="false" />
-            <element signature="e#2216#2217#0" expanded="false" />
-            <element signature="e#2242#2243#0" expanded="false" />
-            <element signature="e#2280#2281#0" expanded="false" />
-            <element signature="e#2310#2311#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/HttpClientUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2349">
+        <state relative-caret-position="2430">
           <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2504#2505#0" expanded="false" />
-            <element signature="e#2547#2548#0" expanded="false" />
-            <element signature="e#2833#3005#0" expanded="false" />
-            <element signature="e#3004#3005#0" expanded="false" />
-            <element signature="e#4130#4131#0" expanded="false" />
-            <element signature="e#4179#4180#0" expanded="false" />
-            <element signature="e#4923#4938#0" expanded="false" />
-            <element signature="e#8521#8522#0" expanded="false" />
-            <element signature="e#8562#8563#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/StrUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
+        <state relative-caret-position="945">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2503,12 +2434,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/DateUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="408" column="14" selection-start-line="408" selection-start-column="14" selection-end-line="408" selection-end-column="14" />
-          <folding>
-            <element signature="e#2343#2344#0" expanded="true" />
-            <element signature="e#2395#2396#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="371">
+          <caret line="411" column="52" selection-start-line="411" selection-start-column="52" selection-end-line="411" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distributed.core/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="40" column="83" selection-start-line="40" selection-start-column="83" selection-end-line="40" selection-end-column="83" />
+          <folding />
         </state>
       </provider>
     </entry>
