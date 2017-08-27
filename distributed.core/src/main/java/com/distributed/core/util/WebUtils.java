@@ -1,5 +1,7 @@
 package com.distributed.core.util;
 
+import eu.bitwalker.useragentutils.OperatingSystem;
+import eu.bitwalker.useragentutils.UserAgent;
 import org.apache.commons.lang.StringUtils;
 import sun.misc.BASE64Decoder;
 
@@ -43,6 +45,33 @@ public class WebUtils {
             ip = request.getRemoteAddr();
         }
         return ip;
+    }
+
+    /**
+     * 获取浏览器类型
+     *
+     * @param request
+     * @return
+     */
+    public static String getModel(HttpServletRequest request) {
+        String header = request.getHeader("User-Agent");
+        if(StringUtils.isEmpty(header)){
+            return "UNKNOWN";
+        }
+        if(header.toUpperCase().contains("MICROMESSENGER")){
+            return "WECHART";
+        }
+        UserAgent userAgent = UserAgent.parseUserAgentString(header);
+        OperatingSystem os = userAgent.getOperatingSystem();
+        String name = os.getName().toUpperCase();
+        if (name.contains("ANDROID")) {
+            return "ANDROID";
+        }else if (name.contains("IPHONE")) {
+            return "IOS";
+        }else if (name.contains("WINDOWS")) {
+            return "PC";
+        }
+        return "UNKNOWN";
     }
 
     /**
