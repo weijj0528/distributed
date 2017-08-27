@@ -21,11 +21,10 @@ public class TokenUtils {
 
     public static String createSid(String sessionId, String key) throws Exception {
         String sid = sessionId + "__" + key;
-        return EncryptUtil.encryptAES(sid, ENCRYPT_KEY);
+        return sid;
     }
 
     public static String parseSidToKey(String sid) throws Exception {
-        sid = EncryptUtil.decryptAES(sid, ENCRYPT_KEY);
         String[] split = sid.split("__");
         if (split.length != 2)
             throw new ErrorMsgException("SID错误，解析出错：" + sid);
