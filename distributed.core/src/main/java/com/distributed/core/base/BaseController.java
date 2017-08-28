@@ -1,8 +1,9 @@
 package com.distributed.core.base;
 
-import com.mysql.jdbc.exceptions.MySQLSyntaxErrorException;
 import com.distributed.core.bean.ResultBean;
+import com.distributed.core.exception.BaseException;
 import com.distributed.core.exception.ErrorMsgException;
+import com.mysql.jdbc.exceptions.MySQLSyntaxErrorException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -27,8 +28,8 @@ public class BaseController extends BaseFront {
         logger.error(ex);
         String url = request.getRequestURI();
         Map<String, String[]> parameterMap = request.getParameterMap();
-        if (ex instanceof ErrorMsgException) {
-            ErrorMsgException errorMsgException = (ErrorMsgException) ex;
+        if (ex instanceof BaseException) {
+            BaseException errorMsgException = (BaseException) ex;
             return new ResultBean(errorMsgException);
         } else if (ex instanceof MySQLSyntaxErrorException) {
 
