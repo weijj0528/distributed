@@ -30,6 +30,8 @@ public class BaseController extends BaseFront {
         Map<String, String[]> parameterMap = request.getParameterMap();
         if (ex instanceof NoAuthException) {
             return new ResultBean(ErrorMsgEnum.NoAuthException);
+        } else if (ex instanceof ErrorMsgException) {
+            return new ResultBean((ErrorMsgException) ex);
         } else if (ex instanceof OvertimeException) {
             return new ResultBean(ErrorMsgEnum.OvertimeException);
         } else if (ex instanceof UnauthorizedException) {
