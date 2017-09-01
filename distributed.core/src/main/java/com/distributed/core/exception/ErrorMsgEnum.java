@@ -38,7 +38,15 @@ public enum ErrorMsgEnum {
      * 余额不足
      */
     Insufficient_Balance("0e04", "余额不足"),
+    /**
+     * 用户已在其他设备登录  当前认证无效	   抛出 401
+     */
+    UnauthorizedException("401", "设备登出"),
 
+    /**
+     * 账户 未登录  需要重新登录
+     */
+    OvertimeException("408", "请求超时"),
     /**
      * 账户 未登录  需要重新登录
      */
