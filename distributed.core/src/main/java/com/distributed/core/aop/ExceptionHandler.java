@@ -7,10 +7,7 @@ import com.distributed.core.annotation.RemoveLoginCheck;
 import com.distributed.core.base.BaseFront;
 import com.distributed.core.bean.ParamBean;
 import com.distributed.core.bean.ResultBean;
-import com.distributed.core.exception.BadRequestException;
-import com.distributed.core.exception.ErrorMsgEnum;
-import com.distributed.core.exception.ErrorMsgException;
-import com.distributed.core.exception.NoAuthException;
+import com.distributed.core.exception.*;
 import com.distributed.core.system.SysConfig;
 import net.sf.json.JSONArray;
 
@@ -86,6 +83,8 @@ public class ExceptionHandler extends BaseFront implements ThrowsAdvice {
                 resultBean = new ResultBean(ErrorMsgEnum.NoAuthException);
             } else if (e instanceof BadRequestException) {
                 resultBean = new ResultBean(ErrorMsgEnum.badRequestException);
+            }else if (e instanceof InsufficientBalanceException) {
+                resultBean = new ResultBean(ErrorMsgEnum.Insufficient_Balance);
             } else if (e instanceof RpcException) {
                 resultBean = new ResultBean(new ErrorMsgException(ErrorMsgEnum.ERROR_SERVER, "内部服务提供异常"));
             } else {
