@@ -1,7 +1,6 @@
 package com.distributed.core.bean;
 
-import com.alibaba.fastjson.JSON;
-import net.sf.json.JSONObject;
+import com.alibaba.fastjson.JSONObject;
 
 import java.io.Serializable;
 
@@ -50,7 +49,7 @@ public class ParamBean implements Serializable, Cloneable {
     }
 
     public <T> T getParam(Class<T> clazz) {
-        return JSON.parseObject(param.toString(), clazz);
+        return param.toJavaObject(clazz);
     }
 
     public JSONObject getParam() {

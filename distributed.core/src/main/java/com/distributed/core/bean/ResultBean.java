@@ -3,9 +3,9 @@ package com.distributed.core.bean;
 import java.io.Serializable;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.distributed.core.exception.ErrorMsgEnum;
 import com.distributed.core.exception.ErrorMsgException;
-import net.sf.json.JSONObject;
 import net.sf.json.util.JSONUtils;
 
 /**
@@ -76,7 +76,7 @@ public class ResultBean implements Serializable, Cloneable {
             if (result.getClass() == JSONObject.class) {
                 this.result = (JSONObject) result;
             } else
-                this.result = JSONObject.fromObject(result);
+                this.result = JSON.parseObject(JSON.toJSONString(result));
         }
     }
 

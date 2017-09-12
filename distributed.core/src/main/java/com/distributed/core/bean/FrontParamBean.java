@@ -1,6 +1,6 @@
 package com.distributed.core.bean;
 
-import net.sf.json.JSONObject;
+import com.alibaba.fastjson.JSONObject;
 
 import java.io.Serializable;
 
