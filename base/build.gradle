@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
-group 'com.william'
+group 'com.weiun'
 version '1.0'
 
 sourceCompatibility = 1.5
@@ -41,6 +41,7 @@ dependencies {
     compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
     compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.3'
     compile group: 'commons-dbcp', name: 'commons-dbcp', version: '1.4'
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.38-CUSTOM'
 }
 
 // dubbox 接口打包

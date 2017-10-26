@@ -1,0 +1,131 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+group 'com.weiun'
+version '1.0'
+
+sourceCompatibility = 1.6
+
+repositories {
+    mavenLocal()
+    // 局域网Maven仓库
+    maven {
+        url "http://lovejiayuan.cn:8081/repository/maven-releases/"
+    }
+    mavenCentral()
+}
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'com.weiun:base:1.0'
+    // 数据库
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.40'
+    compile group: 'org.mybatis', name: 'mybatis', version: '3.4.0'
+    compile group: 'org.mybatis', name: 'mybatis-spring', version: '1.3.0'
+    compile group: 'tk.mybatis', name: 'mapper', version: '3.3.9'
+    compile group: 'com.github.pagehelper', name: 'pagehelper', version: '5.0.0'
+    compile group: 'org.mybatis.generator', name: 'mybatis-generator-core', version: '1.3.5'
+
+    // https://mvnrepository.com/artifact/com.alibaba/druid
+    compile group: 'com.alibaba', name: 'druid', version: '1.0.29'
+
+    // spring
+    compile group: 'org.springframework', name: 'spring-core', version: '4.3.7.RELEASE'
+    compile group: 'org.springframework', name: 'spring-beans', version: '4.3.7.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.7.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context-support', version: '4.3.7.RELEASE'
+    compile group: 'org.springframework', name: 'spring-oxm', version: '4.3.7.RELEASE'
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.7.RELEASE'
+    compile group: 'org.springframework', name: 'spring-orm', version: '4.3.7.RELEASE'
+    compile group: 'org.springframework', name: 'spring-aop', version: '4.3.7.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.7.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version: '4.3.7.RELEASE'
+    compile group: 'org.springframework', name: 'spring-test', version: '4.3.7.RELEASE'
+    // 解析 User-Agent 字符串 操作系统/Web浏览器 /移动设别/平板设别/Email 客户端/ 类似Gmail和Hotmail的客户端
+    compile group: 'eu.bitwalker', name: 'UserAgentUtils', version: '1.20'
+    compile group: 'org.aspectj', name: 'aspectjrt', version: '1.8.10'
+    compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.8.10'
+
+    // fastjson
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.38-CUSTOM'
+    // jackson
+    compile group: 'org.codehaus.jackson', name: 'jackson-core-lgpl', version: '1.9.13'
+    compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.13'
+    // dubbox
+    compile group: 'com.alibaba', name: 'dubbo', version: '2.8.4'
+    compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.4.9'
+    compile group: 'com.101tec', name: 'zkclient', version: '0.3'
+    compile group: 'com.esotericsoftware.kryo', name: 'kryo', version: '2.24.0'
+    compile group: 'de.javakaffee', name: 'kryo-serializers', version: '0.26'
+    // 缓存
+    compile group: 'redis.clients', name: 'jedis', version: '2.9.0'
+    compile group: 'org.springframework.data', name: 'spring-data-redis', version: '1.7.0.RELEASE'
+    compile group: 'net.sf.ehcache', name: 'ehcache', version: '2.10.0'
+    compile group: 'net.sf.json-lib', name: 'json-lib', version: '2.4'
+    // 定时任务
+    compile group: 'quartz', name: 'quartz', version: '1.5.2'
+}
+
+// 将src/main/java编译的class打包成${project.name}-${version}.jar放入到build/libs目录下,配置文件没必要打包 可执行
+task jarWithoutResources(type: Jar) {
+//    dependsOn jarWithDubbox
+    baseName project.name
+    String someString = ''
+    configurations.runtime.each { someString = someString + " lib/" + it.name } //遍历项目的所有依赖的jar包赋值给变量someString
+    manifest {
+        attributes 'Implementation-Title': 'Gradle By Weiun'
+        attributes 'Implementation-Version': version
+        attributes 'Main-Class': 'com.ycmm.wms.Main'
+        attributes 'Class-Path': someString
+    }
+    from("$buildDir/classes/main") {
+//        exclude "com/ycmm/wms/MyGenerator.class"
+    }
+}
+
+//上传到nexus
+publishing {
+    publications {
+        //jar构件配置
+        mavenJava(MavenPublication) {
+            version = "$project.version"
+            artifactId = "$project.name"
+            groupId = "$project.group"
+            // 指定我们需要上传的内容
+//            artifact("$buildDir/libs/${project.getName()}-${project.getVersion()}-dubbo.jar") {
+//                // These values will be used instead of the values from the task. The task values will not be updated.
+//                classifier "dubbo"
+//                extension "jar"
+//            }
+            artifact("$buildDir/libs/${project.getName()}-${project.getVersion()}.jar") {
+                extension "jar"
+            }
+            pom.withXml {
+                asNode().appendNode('description', 'A demonstration of maven POM customization')
+                def depNodes = asNode().appendNode('dependencies')
+                project.configurations.collectMany { it.allDependencies }.toSet().findAll {
+                    it instanceof ProjectDependency || it instanceof ExternalModuleDependency
+                }.each { dep ->
+                    def depNode = depNodes.appendNode('dependency')
+                    depNode.appendNode('groupId', dep.getGroup())
+                    depNode.appendNode('artifactId', dep.getName())
+                    depNode.appendNode('version', dep.getVersion())
+//                    depNode.appendNode('classifier', dep.getClassifier())
+//                    println dep.getClassifier()
+                    depNode.appendNode('scope', 'compile')
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            url "http://lovejiayuan.cn:8081/repository/maven-releases/"
+            credentials {
+                username 'admin'
+                password 'weijj0528'
+            }
+        }
+    }
+}

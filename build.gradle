@@ -1,4 +1,4 @@
-group 'com.vijay'
+group 'com.weiun'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'

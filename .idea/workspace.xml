@@ -1,23 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4001cbd-e0f3-4e04-b82a-5c5cf5ff6345" name="Default" comment="">
+    <list default="true" id="a0412a45-3823-4589-8296-f419ae7766b0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/base/BaseFront.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/base/BaseService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/bean/FrontParamBean.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/aop/ExceptionHandler.java" afterPath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/aop/ExceptionHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/build.gradle" afterPath="$PROJECT_DIR$/base/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/Base64.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/Base64.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/DateUtils.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/DateUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/EncryptUtil.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/EncryptUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/FileKit.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/FileKit.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/FunnyDate.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/FunnyDate.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/HashKit.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/HashKit.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/JaxbUtil.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/JaxbUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/MoneyUtils.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/MoneyUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/ObjUtils.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/ObjUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/PatternUtils.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/PatternUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/StrUtils.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/StrUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/base/src/main/java/com/william/base/util/Transcoder.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/Transcoder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/.gitignore" afterPath="$PROJECT_DIR$/core/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/build.gradle" afterPath="$PROJECT_DIR$/core/build.gradle" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/annotation/LoginCheck.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/annotation/LoginCheck.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/annotation/RemoveLoginCheck.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/annotation/RemoveLoginCheck.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/aop/ExceptionHandler.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/aop/ExceptionHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/base/BaseController.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/base/BaseController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/bean/ParamBean.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/bean/ParamBean.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/bean/ResultBean.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/bean/ResultBean.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/cache/Cache.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/cache/Cache.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/cache/impl/EhcacheImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/cache/impl/EhcacheImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/cache/impl/RedisCacheImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/cache/impl/RedisCacheImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/BadRequestException.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/BadRequestException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/BaseException.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/BaseException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ErrorMsgEnum.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/ErrorMsgEnum.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ErrorMsgException.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/ErrorMsgException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ExceptionCause.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/ExceptionCause.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/InsufficientBalanceException.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/InsufficientBalanceException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/NoAuthException.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/NoAuthException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/OvertimeException.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/OvertimeException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/UnauthorizedException.java" afterPath="$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/UnauthorizedException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/lock/Lock.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/lock/Lock.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/lock/impl/AbstractLock.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/lock/impl/AbstractLock.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/lock/impl/RedisLock.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/lock/impl/RedisLock.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/spring/SpringInit.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/spring/SpringInit.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/system/SysConfig.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/system/SysConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/ConvertKit.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/ConvertKit.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/HttpClientUtils.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/HttpClientUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/IOSEmojiUtil.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/IOSEmojiUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/IdKit.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/IdKit.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/JDBCSupportUtils.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/JDBCSupportUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/JSONPropertyRowMapper.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/JSONPropertyRowMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/ObjectId.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/ObjectId.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/TokenUtils.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/TokenUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/WebUtils.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/WebUtils.java" />
     </list>
-    <ignored path="distributed.iws" />
-    <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/base/.gradle/" />
     <ignored path="$PROJECT_DIR$/base/build/" />
     <ignored path="$PROJECT_DIR$/distributed.core/.gradle/" />
     <ignored path="$PROJECT_DIR$/distributed.core/build/" />
-    <ignored path="$PROJECT_DIR$/distributed.front/.gradle/" />
-    <ignored path="$PROJECT_DIR$/distributed.front/build/" />
-    <ignored path="$PROJECT_DIR$/distributed.server.demo/.gradle/" />
-    <ignored path="$PROJECT_DIR$/distributed.server.demo/build/" />
-    <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/core/.gradle/" />
+    <ignored path="$PROJECT_DIR$/core/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,22 +74,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/distributed$StrUtils.coverage" NAME="StrUtils Coverage Results" MODIFIED="1500127008088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.william.base.util.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/distributed$front.coverage" NAME="front Coverage Results" MODIFIED="1492228217764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="F:\workspace\distributed" />
-  </component>
-  <component name="DatabaseView">
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="ExternalProjectsData">
@@ -51,19 +86,10 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$/distributed.front">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$/distributed.core">
-          <activation />
-        </task>
         <task path="$PROJECT_DIR$/base">
           <activation />
         </task>
-        <task path="$PROJECT_DIR$/distributed.server.demo">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$">
+        <task path="$PROJECT_DIR$/distributed.core">
           <activation />
         </task>
         <projects_view>
@@ -76,72 +102,6 @@
               <PATH_ELEMENT>
                 <option name="myItemId" value="distributed" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value=":distributed.core" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="distributed" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value=":distributed.core" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="distributed" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value=":distributed.core" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="publishing" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="distributed" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value=":distributed.core" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="build" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
               </PATH_ELEMENT>
             </PATH>
             <PATH>
@@ -167,88 +127,59 @@
                 <option name="myItemId" value="distributed" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
               </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":base" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+            </PATH>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="distributed" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value=":base" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ModuleNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Tasks" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="publishing" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
+              </PATH_ELEMENT>
             </PATH>
           </tree_state>
         </projects_view>
       </state>
     </system>
-    <system id="SBT">
-      <state>
-        <projects_view>
-          <tree_state />
-        </projects_view>
-      </state>
-    </system>
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="distributed" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BaseController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/base/BaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExceptionHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/aop/ExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1647">
-              <caret line="79" column="49" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/bean/ResultBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorMsgEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ErrorMsgEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="AnnotationType" />
-        <option value="package-info" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
+    <leaf />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="D:\Program Files\gradle-3.3" />
+        <entry key="$PROJECT_DIR$" value="D:\Program Files\gradle-3.4.1" />
       </map>
     </option>
     <option name="myGradleVersions">
       <map>
-        <entry key="$PROJECT_DIR$" value="3.3" />
+        <entry key="$PROJECT_DIR$" value="3.4.1" />
       </map>
     </option>
     <option name="availableProjects">
@@ -271,8 +202,8 @@
                 <option name="path" value="$PROJECT_DIR$/base" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value=":distributed.core" />
-                <option name="path" value="$PROJECT_DIR$/distributed.core" />
+                <option name="name" value=":core" />
+                <option name="path" value="$PROJECT_DIR$/core" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -629,33 +560,183 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/distributed.core">
+        <entry key="$PROJECT_DIR$/core">
           <value>
             <list>
               <ExternalTaskPojo>
                 <option name="description" value="Publishes Maven publication 'mavenJava' to Maven repository 'maven'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
                 <option name="name" value="publishMavenJavaPublicationToMavenRepository" />
               </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':core'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':core'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':core'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':core'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Maven POM file for publication 'mavenJava'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="generatePomFileForMavenJavaPublication" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':core'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':core'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Publishes Maven publication 'mavenJava' to the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="publishMavenJavaPublicationToMavenLocal" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':core'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="jarWithoutResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':core'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Publishes all publications produced by this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="publish" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="publishToMavenLocal" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':core'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/core" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/distributed.core">
+          <value>
+            <list>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the components produced by project ':distributed.core'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of project ':distributed.core'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
                 <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the dependent components of components in project ':distributed.core'. [incubating]" />
@@ -668,83 +749,9 @@
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates the Maven POM file for publication 'mavenJava'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="generatePomFileForMavenJavaPublication" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':distributed.core'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':distributed.core'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes Maven publication 'mavenJava' to the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="publishMavenJavaPublicationToMavenLocal" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the insight into a specific dependency in project ':distributed.core'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
                 <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="jarWithoutResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in project ':distributed.core'." />
@@ -752,44 +759,24 @@
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
+                <option name="description" value="Displays the configuration model of project ':distributed.core'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="install" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all publications produced by this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="publish" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Publishes all Maven publications produced by this project to the local Maven cache." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-                <option name="name" value="publishToMavenLocal" />
+                <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of project ':distributed.core'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
                 <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':distributed.core'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/distributed.core" />
+                <option name="name" value="tasks" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -798,8 +785,10 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6000277561219" />
-        <entry key="$PROJECT_DIR$/../web" value="2974858071163" />
+        <entry key="$PROJECT_DIR$/../biz-demo" value="2979446199808" />
+        <entry key="$PROJECT_DIR$/../biz-flow" value="2979448864935" />
+        <entry key="$PROJECT_DIR$/../biz-wms" value="2979266116183" />
+        <entry key="$PROJECT_DIR$" value="6035977193693" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -823,24 +812,17 @@
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
+                  <entry key="$PROJECT_DIR$/core">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/core" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
                   <entry key="$PROJECT_DIR$/distributed.core">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
                         <option name="path" value="$PROJECT_DIR$/distributed.core" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/distributed.front">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/distributed.front" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                  <entry key="$PROJECT_DIR$/distributed.server.demo">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/distributed.server.demo" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -849,141 +831,141 @@
               <option name="name" value="distributed" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="D:/Program Files/gradle-3.3/src/announce" />
-                  <option value="D:/Program Files/gradle-3.3/src/antlr" />
-                  <option value="D:/Program Files/gradle-3.3/src/base-services" />
-                  <option value="D:/Program Files/gradle-3.3/src/base-services-groovy" />
-                  <option value="D:/Program Files/gradle-3.3/src/build-cache-http" />
-                  <option value="D:/Program Files/gradle-3.3/src/build-comparison" />
-                  <option value="D:/Program Files/gradle-3.3/src/build-init" />
-                  <option value="D:/Program Files/gradle-3.3/src/cli" />
-                  <option value="D:/Program Files/gradle-3.3/src/code-quality" />
-                  <option value="D:/Program Files/gradle-3.3/src/composite-builds" />
-                  <option value="D:/Program Files/gradle-3.3/src/core" />
-                  <option value="D:/Program Files/gradle-3.3/src/dependency-management" />
-                  <option value="D:/Program Files/gradle-3.3/src/diagnostics" />
-                  <option value="D:/Program Files/gradle-3.3/src/ear" />
-                  <option value="D:/Program Files/gradle-3.3/src/ide" />
-                  <option value="D:/Program Files/gradle-3.3/src/ide-native" />
-                  <option value="D:/Program Files/gradle-3.3/src/ide-play" />
-                  <option value="D:/Program Files/gradle-3.3/src/installation-beacon" />
-                  <option value="D:/Program Files/gradle-3.3/src/internal-android-performance-testing" />
-                  <option value="D:/Program Files/gradle-3.3/src/internal-integ-testing" />
-                  <option value="D:/Program Files/gradle-3.3/src/internal-performance-testing" />
-                  <option value="D:/Program Files/gradle-3.3/src/internal-testing" />
-                  <option value="D:/Program Files/gradle-3.3/src/ivy" />
-                  <option value="D:/Program Files/gradle-3.3/src/jacoco" />
-                  <option value="D:/Program Files/gradle-3.3/src/javascript" />
-                  <option value="D:/Program Files/gradle-3.3/src/jetty" />
-                  <option value="D:/Program Files/gradle-3.3/src/jvm-services" />
-                  <option value="D:/Program Files/gradle-3.3/src/language-groovy" />
-                  <option value="D:/Program Files/gradle-3.3/src/language-java" />
-                  <option value="D:/Program Files/gradle-3.3/src/language-jvm" />
-                  <option value="D:/Program Files/gradle-3.3/src/language-native" />
-                  <option value="D:/Program Files/gradle-3.3/src/language-scala" />
-                  <option value="D:/Program Files/gradle-3.3/src/launcher" />
-                  <option value="D:/Program Files/gradle-3.3/src/logging" />
-                  <option value="D:/Program Files/gradle-3.3/src/maven" />
-                  <option value="D:/Program Files/gradle-3.3/src/messaging" />
-                  <option value="D:/Program Files/gradle-3.3/src/model-core" />
-                  <option value="D:/Program Files/gradle-3.3/src/model-groovy" />
-                  <option value="D:/Program Files/gradle-3.3/src/native" />
-                  <option value="D:/Program Files/gradle-3.3/src/open-api" />
-                  <option value="D:/Program Files/gradle-3.3/src/osgi" />
-                  <option value="D:/Program Files/gradle-3.3/src/platform-base" />
-                  <option value="D:/Program Files/gradle-3.3/src/platform-jvm" />
-                  <option value="D:/Program Files/gradle-3.3/src/platform-native" />
-                  <option value="D:/Program Files/gradle-3.3/src/platform-play" />
-                  <option value="D:/Program Files/gradle-3.3/src/plugin-development" />
-                  <option value="D:/Program Files/gradle-3.3/src/plugin-use" />
-                  <option value="D:/Program Files/gradle-3.3/src/plugins" />
-                  <option value="D:/Program Files/gradle-3.3/src/process-services" />
-                  <option value="D:/Program Files/gradle-3.3/src/publish" />
-                  <option value="D:/Program Files/gradle-3.3/src/reporting" />
-                  <option value="D:/Program Files/gradle-3.3/src/resources" />
-                  <option value="D:/Program Files/gradle-3.3/src/resources-http" />
-                  <option value="D:/Program Files/gradle-3.3/src/resources-s3" />
-                  <option value="D:/Program Files/gradle-3.3/src/resources-sftp" />
-                  <option value="D:/Program Files/gradle-3.3/src/scala" />
-                  <option value="D:/Program Files/gradle-3.3/src/signing" />
-                  <option value="D:/Program Files/gradle-3.3/src/test-kit" />
-                  <option value="D:/Program Files/gradle-3.3/src/testing-base" />
-                  <option value="D:/Program Files/gradle-3.3/src/testing-jvm" />
-                  <option value="D:/Program Files/gradle-3.3/src/testing-native" />
-                  <option value="D:/Program Files/gradle-3.3/src/tooling-api" />
-                  <option value="D:/Program Files/gradle-3.3/src/tooling-api-builders" />
-                  <option value="D:/Program Files/gradle-3.3/src/ui" />
-                  <option value="D:/Program Files/gradle-3.3/src/workers" />
-                  <option value="D:/Program Files/gradle-3.3/src/wrapper" />
-                  <option value="D:/Program Files/gradle-3.3/lib/ant-1.9.6.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/ant-launcher-1.9.6.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-base-services-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-base-services-groovy-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-cli-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-core-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-docs-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-installation-beacon-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-jvm-services-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-launcher-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-logging-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-messaging-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-model-core-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-model-groovy-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-native-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-open-api-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-process-services-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-resources-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-script-kotlin-0.5.1.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-tooling-api-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-ui-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-version-info-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/gradle-wrapper-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/groovy-all-2.4.7.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-announce-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-antlr-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-build-cache-http-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-build-comparison-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-build-init-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-code-quality-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-composite-builds-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-dependency-management-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-diagnostics-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-ear-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-ide-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-ide-native-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-ide-play-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-ivy-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-jacoco-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-javascript-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-jetty-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-language-groovy-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-language-java-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-language-jvm-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-language-native-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-language-scala-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-maven-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-osgi-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-platform-base-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-platform-jvm-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-platform-native-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-platform-play-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-plugin-development-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-plugin-use-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-plugins-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-publish-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-reporting-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-resources-http-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-resources-s3-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-resources-sftp-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-scala-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-signing-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-test-kit-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-testing-base-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-testing-jvm-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-testing-native-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-tooling-api-builders-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/gradle-workers-3.3.jar" />
-                  <option value="D:/Program Files/gradle-3.3/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/announce" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/antlr" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/base-services" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/base-services-groovy" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/build-cache-http" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/build-comparison" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/build-init" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/cli" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/code-quality" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/composite-builds" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/core" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/dependency-management" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/diagnostics" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/ear" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/ide" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/ide-native" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/ide-play" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/installation-beacon" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/internal-android-performance-testing" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/internal-integ-testing" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/internal-performance-testing" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/internal-testing" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/ivy" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/jacoco" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/javascript" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/jetty" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/jvm-services" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/language-groovy" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/language-java" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/language-jvm" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/language-native" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/language-scala" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/launcher" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/logging" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/maven" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/messaging" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/model-core" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/model-groovy" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/native" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/open-api" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/osgi" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/platform-base" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/platform-jvm" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/platform-native" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/platform-play" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/plugin-development" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/plugin-use" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/plugins" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/process-services" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/publish" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/reporting" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/resources" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/resources-http" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/resources-s3" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/resources-sftp" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/scala" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/signing" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/test-kit" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/testing-base" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/testing-jvm" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/testing-native" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/tooling-api" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/tooling-api-builders" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/ui" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/workers" />
+                  <option value="D:/Program Files/gradle-3.4.1/src/wrapper" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/ant-1.9.6.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/ant-launcher-1.9.6.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-base-services-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-base-services-groovy-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-cli-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-core-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-docs-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-installation-beacon-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-jvm-services-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-launcher-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-logging-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-messaging-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-model-core-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-model-groovy-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-native-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-open-api-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-process-services-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-resources-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-script-kotlin-0.5.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-tooling-api-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-ui-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-version-info-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/gradle-wrapper-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/groovy-all-2.4.7.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-announce-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-antlr-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-build-cache-http-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-build-comparison-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-build-init-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-code-quality-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-composite-builds-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-dependency-management-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-diagnostics-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-ear-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-ide-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-ide-native-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-ide-play-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-ivy-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-jacoco-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-javascript-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-jetty-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-language-groovy-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-language-java-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-language-jvm-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-language-native-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-language-scala-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-maven-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-osgi-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-platform-base-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-platform-jvm-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-platform-native-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-platform-play-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-plugin-development-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-plugin-use-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-plugins-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-publish-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-reporting-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-resources-http-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-resources-s3-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-resources-sftp-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-scala-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-signing-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-test-kit-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-testing-base-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-testing-jvm-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-testing-native-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-tooling-api-builders-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/gradle-workers-3.4.1.jar" />
+                  <option value="D:/Program Files/gradle-3.4.1/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -1000,57 +982,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/distributed.server.demo/src/main/resources/config/conf.properties" />
-        <option value="$PROJECT_DIR$/distributed.server.demo/build.gradle" />
-        <option value="$PROJECT_DIR$/distributed.front/build.gradle" />
-        <option value="$PROJECT_DIR$/distributed.front/src/main/resources/spring/spring-dubbo.xml" />
-        <option value="$PROJECT_DIR$/distributed.server.demo/src/main/java/com/vijay/distributed/demo/service/impl/DemoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/distributed.front/src/main/java/com/vijay/distributed/demo/service/impl/FrontServiceImpl.java" />
-        <option value="$PROJECT_DIR$/distributed.front/src/main/resources/config/release/conf.properties" />
-        <option value="$PROJECT_DIR$/distributed.front/src/main/resources/config/snapshot/conf.properties" />
-        <option value="$PROJECT_DIR$/distributed.server.demo/src/main/resources/config/release/conf.properties" />
-        <option value="$PROJECT_DIR$/distributed.server.demo/src/main/resources/config/snapshot/conf.properties" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/Transcoder.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/UnauthorizedException.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ExceptionCause.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/JSONPropertyRowMapper.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/EncryptUtil.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/reflect/Reflect.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/ConvertKit.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/JDBCSupportUtils.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/DateUtils.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/Base64.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/IdKit.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/FileKit.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/FunnyDate.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/HashKit.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/PatternUtils.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/WebUtils.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/Transcoder.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/HttpClientUtils.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/ObjectId.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/ObjectId.java" />
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/cache/impl/RedisCacheImpl.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/IdKit.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/EncryptUtil.java" />
-        <option value="$PROJECT_DIR$/distributed.core/build.gradle" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/StrUtils.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/DateUtils.java" />
-        <option value="$PROJECT_DIR$/base/build.gradle" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/HttpClientUtils.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/JaxbUtil.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/william/base/util/ObjUtils.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/WebUtils.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/lock/impl/AbstractLock.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/lock/impl/RedisLock.java" />
+        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/ConvertKit.java" />
+        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/cache/impl/RedisCacheImpl.java" />
         <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/TokenUtils.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/InsufficientBalanceException.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ErrorMsgEnum.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/base/BaseController.java" />
-        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/aop/ExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/distributed.core/build.gradle" />
+        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/WebUtils.java" />
+        <option value="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/DateUtils.java" />
+        <option value="$PROJECT_DIR$/base/build.gradle" />
+        <option value="$PROJECT_DIR$/base/src/main/java/com/weiun/base/bean/ParamBean.java" />
+        <option value="$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/BadRequestException.java" />
+        <option value="$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/ObjUtils.java" />
+        <option value="$PROJECT_DIR$/base/src/main/java/com/weiun/base/bean/ResultBean.java" />
+        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/weiun/core/cache/impl/EhcacheImpl.java" />
+        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/weiun/core/cache/impl/RedisCacheImpl.java" />
+        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/weiun/core/spring/SpringInit.java" />
+        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/weiun/core/system/SysConfig.java" />
+        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/weiun/core/aop/ExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/distributed.core/src/main/java/com/weiun/core/base/BaseController.java" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
       </list>
     </option>
   </component>
@@ -1060,17 +1010,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -1080,40 +1023,12 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1924" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Java EE issues</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>ServletWithoutMappingInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -1128,7 +1043,18 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distributed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="distributed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="PackagesPane">
         <subPane>
@@ -1138,7 +1064,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1146,126 +1072,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="distributed" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core_main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core_main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.distributed.core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core_main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.distributed.core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core_main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.distributed.core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core_main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.distributed.core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleGroupNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed.core_main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.distributed.core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="distributed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1276,51 +1086,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
+    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kuaidilaiye-front" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\workspace\distributed\distributed.core\src\main\java\com\distributed\core" />
-      <recent name="F:\workspace\distributed\distributed.core\src\main\java\com\distributed\core\util" />
-      <recent name="F:\workspace\distributed\distributed.server.demo\src\main\resources" />
-      <recent name="F:\workspace\distributed\distributed.front\src\main\resources\config\snapshot" />
-      <recent name="F:\workspace\distributed\distributed.front\src\main\resources\config\release" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.distributed.core.exception" />
-      <recent name="com.vijay.distributed.core.annotation" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\workspace\distributed\distributed.front\src\main\resources\spring" />
+      <recent name="E:\workspace\distributed\base\src\main\java\com\weiun\base\bean" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.distributed:distributed.core [publishMavenJavaPublicationToMavenLocal]">
-    <configuration default="false" name="distributed:distributed.core [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publish" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Gradle.distributed:distributed.core [build]">
     <configuration default="false" name="distributed:base [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1357,24 +1138,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="false" name="distributed:distributed.core [publishMavenJavaPublicationToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/distributed.core" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishMavenJavaPublicationToMavenLocal" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
     <configuration default="false" name="distributed:distributed.core [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1393,24 +1156,50 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration default="false" name="distributed:distributed.core [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/distributed.core" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="distributed:base [publishMavenJavaPublicationToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/base" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishMavenJavaPublicationToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -1420,7 +1209,7 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
@@ -1428,7 +1217,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -1445,7 +1238,7 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
@@ -1453,7 +1246,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <method />
     </configuration>
@@ -1480,7 +1277,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="arquillianRunConfiguration">
@@ -1631,17 +1428,8 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1656,27 +1444,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -1707,6 +1474,12 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -1719,7 +1492,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="base" />
+      <module name="distributed" />
       <envs />
       <method />
     </configuration>
@@ -1733,6 +1506,9 @@
       <option name="workingDirectory" />
       <option name="isAlternativeJrePathEnabled" value="false" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -1755,6 +1531,8 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
       <envs />
       <method />
     </configuration>
@@ -1770,6 +1548,8 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
       <envs />
       <method />
     </configuration>
@@ -1807,34 +1587,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -1845,10 +1597,23 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
@@ -1869,97 +1634,30 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="front" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.5" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <file path="$PROJECT_DIR$/distributed.front/build/libs/distributed.front-1.0-SNAPSHOT.war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </file>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_distributed" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53966" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method />
-    </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.front" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.distributed:distributed.core [publish]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.distributed:base [build]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.distributed:base [publish]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.distributed:distributed.core [publishMavenJavaPublicationToMavenLocal]" />
-      <item index="5" class="java.lang.String" itemvalue="Gradle.distributed:distributed.core [build]" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Gradle.distributed:base [build]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.distributed:base [publish]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.distributed:distributed.core [build]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.distributed:distributed.core [clean]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.distributed:base [publishMavenJavaPublicationToMavenLocal]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.distributed:distributed.core [build]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.distributed:distributed.core [publishMavenJavaPublicationToMavenLocal]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.distributed:base [publish]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.distributed:base [build]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.distributed:distributed.core [publish]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.distributed:base [publishMavenJavaPublicationToMavenLocal]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.distributed:distributed.core [clean]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.distributed:distributed.core [build]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.distributed:base [publish]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.distributed:base [build]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1501686323096" />
+    <option name="lastUpdateTimestamp" value="1508998589192" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -1967,383 +1665,67 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f4001cbd-e0f3-4e04-b82a-5c5cf5ff6345" name="Default" comment="" />
-      <created>1492007371339</created>
+      <changelist id="a0412a45-3823-4589-8296-f419ae7766b0" name="Default" comment="" />
+      <created>1508988466470</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1492007371339</updated>
-      <workItem from="1492007374287" duration="254000" />
-      <workItem from="1492089358054" duration="8258000" />
-      <workItem from="1492217228135" duration="12203000" />
-      <workItem from="1492231259550" duration="10307000" />
-      <workItem from="1492247956299" duration="1592000" />
-      <workItem from="1492847003777" duration="273000" />
-      <workItem from="1492941965923" duration="649000" />
-      <workItem from="1494173291776" duration="16000" />
-      <workItem from="1497360710591" duration="23000" />
-      <workItem from="1497624292352" duration="1217000" />
-      <workItem from="1497698240456" duration="7000" />
-      <workItem from="1497755089887" duration="1055000" />
-      <workItem from="1498266889152" duration="1338000" />
-      <workItem from="1498572033720" duration="32000" />
-      <workItem from="1498572204062" duration="673000" />
-      <workItem from="1498911952798" duration="480000" />
-      <workItem from="1498912998227" duration="4771000" />
-      <workItem from="1498962866225" duration="17000" />
-      <workItem from="1498965008172" duration="960000" />
-      <workItem from="1499094539948" duration="1502000" />
-      <workItem from="1499177399583" duration="2378000" />
-      <workItem from="1499181368708" duration="92000" />
-      <workItem from="1499481338695" duration="6267000" />
-      <workItem from="1499495698785" duration="4527000" />
-      <workItem from="1499516796543" duration="3835000" />
-      <workItem from="1499563848891" duration="1201000" />
-      <workItem from="1499585958272" duration="2192000" />
-      <workItem from="1499782037834" duration="1675000" />
-      <workItem from="1500108976659" duration="2917000" />
-      <workItem from="1501511272141" duration="292000" />
-      <workItem from="1501685984722" duration="977000" />
-      <workItem from="1501687602461" duration="939000" />
-      <workItem from="1501768206416" duration="1581000" />
-      <workItem from="1501922177030" duration="1342000" />
-      <workItem from="1501924060442" duration="714000" />
-      <workItem from="1501931267132" duration="652000" />
-      <workItem from="1501993810195" duration="605000" />
-      <workItem from="1501998241389" duration="2956000" />
-      <workItem from="1503808064887" duration="280000" />
-      <workItem from="1503819519207" duration="866000" />
-      <workItem from="1503820754774" duration="20000" />
-      <workItem from="1503843854712" duration="108000" />
-      <workItem from="1503901295716" duration="387000" />
-      <workItem from="1503901788439" duration="525000" />
-      <workItem from="1503930975971" duration="402000" />
-      <workItem from="1503969765690" duration="45000" />
-      <workItem from="1504278730738" duration="1052000" />
-      <workItem from="1504280473525" duration="859000" />
-      <workItem from="1504536966023" duration="128000" />
+      <updated>1508988466470</updated>
+      <workItem from="1508988467821" duration="8332000" />
+      <workItem from="1508998510194" duration="188000" />
     </task>
-    <task id="LOCAL-00001" summary="init commit">
-      <created>1492007500906</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1492007500906</updated>
-    </task>
-    <task id="LOCAL-00002" summary="init commit">
-      <created>1492007508327</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1492007508327</updated>
-    </task>
-    <task id="LOCAL-00003" summary="前置完善">
-      <created>1492097287483</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1492097287483</updated>
-    </task>
-    <task id="LOCAL-00004" summary="前置完善">
-      <created>1492237132552</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1492237132552</updated>
-    </task>
-    <task id="LOCAL-00005" summary="前置与demo完善">
-      <created>1492242308383</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1492242308383</updated>
-    </task>
-    <task id="LOCAL-00006" summary="忽略调整">
-      <created>1492242454841</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1492242454841</updated>
-    </task>
-    <task id="LOCAL-00007" summary="前置调整">
-      <created>1492269273211</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1492269273211</updated>
-    </task>
-    <task id="LOCAL-00008" summary="基础结构调整">
-      <created>1499178162740</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1499178162740</updated>
-    </task>
-    <task id="LOCAL-00009" summary="添加异地登录异常">
-      <created>1499181413394</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1499181413394</updated>
-    </task>
-    <task id="LOCAL-00010" summary="添加手机与邮箱效验方法">
-      <created>1499481578182</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1499481578182</updated>
-    </task>
-    <task id="LOCAL-00011" summary="项目调整">
-      <created>1499488724880</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1499488724880</updated>
-    </task>
-    <task id="LOCAL-00012" summary="添加Token工具类">
-      <created>1499499255837</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1499499255837</updated>
-    </task>
-    <task id="LOCAL-00013" summary="加密相关调整">
-      <created>1499565001545</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1499565001545</updated>
-    </task>
-    <task id="LOCAL-00014" summary="jar调整">
-      <created>1499588125336</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1499588125336</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Http工具类调整">
-      <created>1500109453660</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1500109453660</updated>
-    </task>
-    <task id="LOCAL-00016" summary="字符串工具类调整">
-      <created>1500127146312</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1500127146312</updated>
-    </task>
-    <task id="LOCAL-00017" summary="日期工具类调整">
-      <created>1501511506829</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1501511506829</updated>
-    </task>
-    <task id="LOCAL-00018" summary="包调整">
-      <created>1501686043457</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1501686043457</updated>
-    </task>
-    <task id="LOCAL-00019" summary="包调整">
-      <created>1501686608273</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1501686608273</updated>
-    </task>
-    <task id="LOCAL-00020" summary="包调整">
-      <created>1501687639269</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1501687639269</updated>
-    </task>
-    <task id="LOCAL-00021" summary="包调整">
-      <created>1501688186844</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1501688186844</updated>
-    </task>
-    <task id="LOCAL-00022" summary="添加XML转化工具">
-      <created>1501768417620</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1501768417620</updated>
-    </task>
-    <task id="LOCAL-00023" summary="调整">
-      <created>1503808162753</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1503808162753</updated>
-    </task>
-    <task id="LOCAL-00024" summary="添加分布式锁">
-      <created>1503820585225</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1503820585225</updated>
-    </task>
-    <task id="LOCAL-00025" summary="sid生成调整">
-      <created>1503843923346</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1503843923346</updated>
-    </task>
-    <task id="LOCAL-00026" summary="异常处理调整">
-      <created>1503901640420</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1503901640420</updated>
-    </task>
-    <task id="LOCAL-00027" summary="添加余额不足错误">
-      <created>1503931344306</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1503931344306</updated>
-    </task>
-    <task id="LOCAL-00028" summary="参数调整">
-      <created>1504279496080</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1504279496080</updated>
-    </task>
-    <task id="LOCAL-00029" summary="统一错误处理调整">
-      <created>1504280705065</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1504280705065</updated>
-    </task>
-    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85441000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="8520000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7017354" sideWeight="0.50852877" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.49566162" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3394794" sideWeight="0.4914712" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27950644" sideWeight="0.49566162" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54013014" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22585838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25799572" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35515022" sideWeight="0.48" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63991326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40238613" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35607675" sideWeight="0.52" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="init commit" />
-    <MESSAGE value="前置完善" />
-    <MESSAGE value="前置与demo完善" />
-    <MESSAGE value="忽略调整" />
-    <MESSAGE value="前置调整" />
-    <MESSAGE value="基础结构调整" />
-    <MESSAGE value="添加异地登录异常" />
-    <MESSAGE value="添加手机与邮箱效验方法" />
-    <MESSAGE value="项目调整" />
-    <MESSAGE value="添加Token工具类" />
-    <MESSAGE value="加密相关调整" />
-    <MESSAGE value="jar调整" />
-    <MESSAGE value="Http工具类调整" />
-    <MESSAGE value="字符串工具类调整" />
-    <MESSAGE value="日期工具类调整" />
-    <MESSAGE value="包调整" />
-    <MESSAGE value="添加XML转化工具" />
-    <MESSAGE value="调整" />
-    <MESSAGE value="添加分布式锁" />
-    <MESSAGE value="sid生成调整" />
-    <MESSAGE value="异常处理调整" />
-    <MESSAGE value="添加余额不足错误" />
-    <MESSAGE value="参数调整" />
-    <MESSAGE value="统一错误处理调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="统一错误处理调整" />
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="9" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -2351,378 +1733,371 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/Transcoder.java">
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_65/jre/lib/rt.jar!/sun/misc/BASE64Decoder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1141">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="242">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/cache/impl/EhcacheImpl.java">
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_65/jre/lib/rt.jar!/sun/misc/CharacterDecoder.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="174">
+          <caret line="85" column="18" lean-forward="false" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/base/BaseService.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/Base64.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        <state relative-caret-position="-770">
+          <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/base/BaseFront.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/WebUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="361">
+          <caret line="154" column="28" lean-forward="false" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/TokenUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="63">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/jre/lib/jce.jar!/javax/crypto/spec/IvParameterSpec.class">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/DateUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="163">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/jre/lib/jce.jar!/javax/crypto/KeyGenerator.class">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/EncryptUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="220" column="35" selection-start-line="220" selection-start-column="31" selection-end-line="220" selection-end-column="35" />
+        <state relative-caret-position="132">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/FileKit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="488" column="50" selection-start-line="488" selection-start-column="39" selection-end-line="488" selection-end-column="50" />
+        <state relative-caret-position="-396">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/william/base/1.0/base-1.0.jar!/com/william/base/util/Base64.class">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/FunnyDate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state relative-caret-position="-1129">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/FileKit.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/HashKit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="132">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/MoneyUtils.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/JaxbUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="-2156">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/PatternUtils.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/MoneyUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="-2237">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/ObjectId.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/PatternUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="-1080">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/IdKit.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/StrUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="125">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/HashKit.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/Transcoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="-1225">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/FunnyDate.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/lock/impl/RedisLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        <state relative-caret-position="-968">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/Base64.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/ConvertKit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="-81">
+          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar!/org/apache/commons/codec/binary/Base64.java">
+    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/weiun/core/bean/FrontParamBean.java" />
+    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/weiun/core/bean/ParamBean.java" />
+    <entry file="file://$PROJECT_DIR$/core/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14769">
-          <caret line="691" column="25" selection-start-line="691" selection-start-column="19" selection-end-line="691" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/EncryptUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="999">
-          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/william/base/1.0/base-1.0.jar!/com/william/base/util/EncryptUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1269">
-          <caret line="57" column="5" selection-start-line="42" selection-start-column="42" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/BadRequestException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/StrUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/DateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10746">
-          <caret line="411" column="52" selection-start-line="411" selection-start-column="52" selection-end-line="411" selection-end-column="52" />
+        <state relative-caret-position="330">
+          <caret line="51" column="76" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="41" column="84" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
+        <state relative-caret-position="352">
+          <caret line="43" column="76" lean-forward="false" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/HttpClientUtils.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/BadRequestException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="225" column="13" selection-start-line="225" selection-start-column="13" selection-end-line="225" selection-end-column="13" />
+        <state relative-caret-position="198">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/JaxbUtil.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/BaseException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="132">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.7.0.RELEASE/spring-data-redis-1.7.0.RELEASE-sources.jar!/org/springframework/data/redis/connection/RedisListCommands.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/ErrorMsgEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/ErrorMsgException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-719">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/ExceptionCause.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/InsufficientBalanceException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-367">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/NoAuthException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/OvertimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/exception/UnauthorizedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/bean/ParamBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="46" column="18" lean-forward="false" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/Boolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="63" column="39" lean-forward="false" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/ObjectId.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/cache/impl/RedisCacheImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/cache/Cache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.7.0.RELEASE/spring-data-redis-1.7.0.RELEASE-sources.jar!/org/springframework/data/redis/connection/RedisConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.7.0.RELEASE/spring-data-redis-1.7.0.RELEASE-sources.jar!/org/springframework/data/redis/connection/RedisCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="90" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/william/base/util/ObjUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/WebUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="109" column="26" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/lock/Lock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/lock/impl/AbstractLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/lock/impl/RedisLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2424">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/util/TokenUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/OvertimeException.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/ObjUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="286">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ErrorMsgException.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/json-lib/json-lib/2.4/json-lib-2.4-sources.jar!/net/sf/json/util/JSONUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="52" />
+        <state relative-caret-position="163">
+          <caret line="316" column="25" lean-forward="false" selection-start-line="316" selection-start-column="25" selection-end-line="316" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/InsufficientBalanceException.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/bean/ResultBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="258">
+          <caret line="62" column="29" lean-forward="false" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/bean/FrontParamBean.java">
+    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/weiun/core/bean/ResultBean.java" />
+    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/weiun/core/base/BaseFront.java" />
+    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/weiun/core/base/BaseService.java" />
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/cache/impl/EhcacheImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        <state relative-caret-position="462">
+          <caret line="21" column="84" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/BaseException.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/cache/impl/RedisCacheImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="330">
+          <caret line="27" column="87" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/NoAuthException.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24-sources.jar!/org/slf4j/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ExceptionCause.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/UnauthorizedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/bean/ResultBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+        <state relative-caret-position="196">
+          <caret line="656" column="16" lean-forward="false" selection-start-line="656" selection-start-column="16" selection-end-line="656" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/exception/ErrorMsgEnum.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/spring/SpringInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="198">
+          <caret line="13" column="83" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/base/BaseController.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/system/SysConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+        <state relative-caret-position="584">
+          <caret line="62" column="14" lean-forward="true" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/aop/ExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/base/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/annotation/RemoveLoginCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/distributed.core/src/main/java/com/distributed/core/aop/ExceptionHandler.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1647">
-          <caret line="79" column="49" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
+        <state relative-caret-position="264">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="gradleExecuteTaskHistory">
-    <option value="" />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Gradle : com.vijay : distributed.front-1.0-SNAPSHOT.war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2769,7 +2144,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>distributed.core_main|distributed.core</last-edited>
+          <last-edited>distributed</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2795,6 +2170,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Gradle: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

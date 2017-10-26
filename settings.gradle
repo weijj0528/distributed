@@ -1,4 +1,4 @@
 rootProject.name = 'distributed'
 include 'base'
-include 'distributed.core'
+include 'core'
 
