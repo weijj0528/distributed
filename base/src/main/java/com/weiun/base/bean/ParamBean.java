@@ -23,10 +23,22 @@ public class ParamBean implements Serializable, Cloneable {
      * 用户 请求 ip地址
      */
     private String ip;
+
+    /**
+     * 用户 session-id
+     */
+    private String sid;
+
     /**
      * 用户 uid
      */
     private String uid;
+
+    /**
+     * 用户 身份
+     */
+    private String identity;
+
     /**
      * 业务请求参数
      */
@@ -49,7 +61,7 @@ public class ParamBean implements Serializable, Cloneable {
         return param;
     }
 
-    public void setBiz_param(JSONObject param) {
+    public void setParam(JSONObject param) {
         this.param = param;
     }
 
@@ -94,6 +106,22 @@ public class ParamBean implements Serializable, Cloneable {
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    public String getSid() {
+        return sid;
+    }
+
+    public void setSid(String sid) {
+        this.sid = sid;
+    }
+
+    public String getIdentity() {
+        return identity;
+    }
+
+    public void setIdentity(String identity) {
+        this.identity = identity;
     }
 
     @Override
