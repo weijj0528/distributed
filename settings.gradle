@@ -1,4 +1,4 @@
-rootProject.name = 'distributed'
+rootProject.name = 'wei-java'
 include 'base'
 include 'core'
 
