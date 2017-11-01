@@ -37,38 +37,47 @@ public class FunnyDate {
 	}
 
 	public String trans() {
-		if (calendar.getTimeInMillis() > System.currentTimeMillis())
+		if (calendar.getTimeInMillis() > System.currentTimeMillis()) {
 			throw new IllegalArgumentException("The Date need to transfer must be earlier than now!");
+		}
 
 		Calendar current = Calendar.getInstance();
 		long distance = current.getTimeInMillis() - calendar.getTimeInMillis();
 		int day_distance = distanceOfDay(current, calendar), minute_distance;
 
-		if (day_distance > 365 + 30)
+		if (day_distance > 365 + 30) {
 			return DateUtils.getDateToString("yy年MM月dd日 HH:mm:ss", calendar.getTimeInMillis());
-		if (day_distance > 365)
+		}
+		if (day_distance > 365) {
 			return "1年前";
+		}
 
-		if (day_distance > 30)
+		if (day_distance > 30) {
 			return day_distance / 30 + "个月前";
+		}
 
-		if (day_distance > 2)
+		if (day_distance > 2) {
 			return day_distance + "天前";
+		}
 
 		minute_distance = current.get(Calendar.MINUTE) - calendar.get(Calendar.MINUTE);
 
-		if (distance > 3 * 60 * 60 * 1000l && distance < 6 * 60 * 60 * 1000l)
-			return "约" + (distance / (60 * 60 * 1000l)) + "小时前";
-		if (distance < 3 * 60 * 60 * 1000l && distance > 60 * 60 * 1000l) {
-			int minute = (int) (distance / (60 * 1000l));
+		if (distance > 3 * 60 * 60 * 1000L && distance < 6 * 60 * 60 * 1000L) {
+			return "约" + (distance / (60 * 60 * 1000L)) + "小时前";
+		}
+		if (distance < 3 * 60 * 60 * 1000L && distance > 60 * 60 * 1000L) {
+			int minute = (int) (distance / (60 * 1000L));
 			return "约" + (minute / 60) + "小时" + (minute_distance == 0 ? "前" : (minute - (minute / 60) * 60) + "分钟前");
 		}
-		if (distance < 60 * 60 * 1000l && distance > 60 * 1000l)
-			return (distance / (60 * 1000l)) + "分钟前";
-		if (distance > 1000l && distance < 60 * 1000l)
-			return (distance / 1000l) + "秒钟前";
-		if (distance < 1000l)
+		if (distance < 60 * 60 * 1000L && distance > 60 * 1000L) {
+			return (distance / (60 * 1000L)) + "分钟前";
+		}
+		if (distance > 1000L && distance < 60 * 1000L) {
+			return (distance / 1000L) + "秒钟前";
+		}
+		if (distance < 1000L) {
 			return "1秒钟前";
+		}
 
 		String period = getPeriod(calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE));
 
@@ -86,22 +95,29 @@ public class FunnyDate {
 
 		int flag = hour * 100 + minute;
 
-		if (flag > 0 && flag <= 400)
+		if (flag > 0 && flag <= 400) {
 			return "凌晨";
-		if (flag > 400 && flag <= 900)
+		}
+		if (flag > 400 && flag <= 900) {
 			return "早上";
-		if (flag > 900 && flag <= 1100)
+		}
+		if (flag > 900 && flag <= 1100) {
 			return "上午";
-		if (flag > 1100 && flag <= 1300)
+		}
+		if (flag > 1100 && flag <= 1300) {
 			return "中午";
-		if (flag > 1300 && flag <= 1700)
+		}
+		if (flag > 1300 && flag <= 1700) {
 			return "下午";
-		if (flag > 1700 && flag <= 2000)
+		}
+		if (flag > 1700 && flag <= 2000) {
 			return "傍晚";
-		if (flag > 2000 && flag <= 2200)
+		}
+		if (flag > 2000 && flag <= 2200) {
 			return "晚上";
-		else
+		} else {
 			return "深夜";
+		}
 
 	}
 
@@ -110,14 +126,14 @@ public class FunnyDate {
 		long mill_now = DateUtils.getFutureInMillis(now.getTimeInMillis(), 0);
 		long mill_before = DateUtils.getFutureInMillis(before.getTimeInMillis(), 0);
 
-		return (int) ((mill_now - mill_before) / (24 * 60 * 60 * 1000l));
+		return (int) ((mill_now - mill_before) / (24 * 60 * 60 * 1000L));
 	}
 
 	public static void main(String args[]) {
 
 		Calendar c = Calendar.getInstance();
 		c.set(2010, 1, 28, 1, 10, 0);
-		System.out.println(DateUtils.getDateToString("", 1272281400000l));
+		System.out.println(DateUtils.getDateToString("", 1272281400000L));
 
 		System.out.println(new FunnyDate(c).trans());
 

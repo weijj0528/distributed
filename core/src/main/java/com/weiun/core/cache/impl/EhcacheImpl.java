@@ -37,14 +37,17 @@ public class EhcacheImpl implements com.weiun.core.cache.Cache {
         this.cache = cache;
     }
 
+    @Override
     public void set(String key, Object value) {
         set(key, value, 0);
     }
 
+    @Override
     public void set(String key, Object value, int expirationTime) {
         set(key, value, 0, expirationTime);
     }
 
+    @Override
     public void set(String key, Object value, int timeToIdleSeconds, int expirationTime) {
         try {
             String syn = EHCACHE_KEY_SYN + key;
@@ -69,6 +72,7 @@ public class EhcacheImpl implements com.weiun.core.cache.Cache {
         }
     }
 
+    @Override
     public Object get(String key) {
         try {
             Object result = null;
@@ -86,6 +90,7 @@ public class EhcacheImpl implements com.weiun.core.cache.Cache {
         return null;
     }
 
+    @Override
     public void remove(String key) {
         try {
             if (cache.get(key.trim()) != null) {
@@ -100,6 +105,7 @@ public class EhcacheImpl implements com.weiun.core.cache.Cache {
      * 把所有cache中的内容删除，但是cache对象还是保留. Clears the contents of all caches in the
      * CacheManager, but without removing any caches.
      */
+    @Override
     public void removeAll() {
         try {
             cache.removeAll();
@@ -109,6 +115,7 @@ public class EhcacheImpl implements com.weiun.core.cache.Cache {
     }
 
 
+    @Override
     public <T> T get(String key, Class<T> clazz) {
         try {
             Object object = get(key);
@@ -120,11 +127,13 @@ public class EhcacheImpl implements com.weiun.core.cache.Cache {
     }
 
 
+    @Override
     public <T> List<T> getList(String key, Class<T> clazz) {
         return null;
     }
 
 
+    @Override
     public <K, T> Map<K, T> getMap(String key, Class<K> keyClazz, Class<T> valClazz) {
         return null;
     }

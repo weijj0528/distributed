@@ -75,8 +75,9 @@ public class ResultBean implements Serializable, Cloneable {
         } else {
             if (result.getClass() == JSONObject.class) {
                 this.result = (JSONObject) result;
-            } else
+            } else {
                 this.result = JSON.parseObject(JSON.toJSONString(result));
+            }
         }
     }
 

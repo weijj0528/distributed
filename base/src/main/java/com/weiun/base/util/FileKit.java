@@ -58,7 +58,9 @@ public class FileKit {
     public static String saveByBase64Str(String imgStr, String fileName, String saveDir) throws Exception {
         // 对字节数组字符串进行Base64解码
         if (StringUtils.isEmpty(imgStr)) // 图像数据为空
+        {
             return null;
+        }
         // Base64解码
         byte[] bytes = Base64.decodeBase64(imgStr);
         for (int i = 0; i < bytes.length; ++i) {
@@ -82,7 +84,9 @@ public class FileKit {
     public static String saveByInputStream(InputStream is, String fileName, String saveDir) throws Exception {
         // 对字节数组字符串进行Base64解码
         if (is == null) // 输入流为空
+        {
             return null;
+        }
         File dir = new File(saveDir);
         if (!dir.exists()) {
             dir.mkdirs();

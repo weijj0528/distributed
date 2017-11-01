@@ -111,8 +111,9 @@ public class WebUtils {
 
         String queryString = request.getQueryString();
 
-        if (StringUtils.isNotEmpty(queryString))
+        if (StringUtils.isNotEmpty(queryString)) {
             url.append("?").append(queryString);
+        }
 
         return url.toString();
     }
@@ -129,8 +130,9 @@ public class WebUtils {
 
         String queryString = request.getQueryString();
 
-        if (StringUtils.isNotEmpty(queryString))
+        if (StringUtils.isNotEmpty(queryString)) {
             url.append("?").append(queryString);
+        }
 
         return url.toString();
     }
@@ -154,8 +156,9 @@ public class WebUtils {
      */
     public static String getFromUrl(HttpServletRequest request, boolean site) {
         String fromUrl = request.getHeader("Referer");
-        if (StringUtils.isEmpty(fromUrl))
+        if (StringUtils.isEmpty(fromUrl)) {
             return "";
+        }
 //        if (site && (PatternUtils.regex("17buy\\.com", fromUrl, false)
 //                || PatternUtils.regex("127.0.0.1", fromUrl, false)))
 //            return "";
@@ -211,8 +214,9 @@ public class WebUtils {
         if (charEncoding == null) {
             charEncoding = "UTF-8";
         }
-        if (buffer == null)
+        if (buffer == null) {
             return null;
+        }
         return new String(buffer, charEncoding);
     }
 
@@ -260,15 +264,17 @@ public class WebUtils {
 
             BufferedReader in;
 
-            if ("gzip".equalsIgnoreCase(urlConnection.getContentEncoding()))
+            if ("gzip".equalsIgnoreCase(urlConnection.getContentEncoding())) {
                 in = new BufferedReader(
                         new InputStreamReader(new GZIPInputStream(urlConnection.getInputStream()), charset));
-            else
+            } else {
                 in = new BufferedReader(new InputStreamReader(urlConnection.getInputStream(), charset));
+            }
 
             String str;
-            while ((str = in.readLine()) != null)
+            while ((str = in.readLine()) != null) {
                 inputLine.append(str).append("\r\n");
+            }
 
             in.close();
         } catch (Exception e) {
@@ -285,8 +291,9 @@ public class WebUtils {
      * @return
      */
     public static String parseTargetUrl(String url) {
-        if (!Pattern.matches("\\w+://.+", url))
+        if (!Pattern.matches("\\w+://.+", url)) {
             url = "http://" + url;
+        }
         return url;
     }
 

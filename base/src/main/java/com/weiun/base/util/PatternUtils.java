@@ -118,8 +118,9 @@ public class PatternUtils {
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(src);
 
-		if (match)
-			return matcher.matches();
+		if (match) {
+            return matcher.matches();
+        }
 
 		return matcher.find();
 	}

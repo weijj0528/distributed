@@ -16,11 +16,13 @@ public abstract class AbstractLock implements Lock {
 	 */
 	protected volatile boolean locked;
 
-	public void lock() {
+	@Override
+    public void lock() {
 		lock(false, 0L , null);
 	}
 
-	public boolean tryLock(long time, TimeUnit timeUnit) {
+	@Override
+    public boolean tryLock(long time, TimeUnit timeUnit) {
 		return lock(true, time, timeUnit);
 	}
 

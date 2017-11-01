@@ -73,12 +73,15 @@ public class HttpClientUtils {
          * 取消检测SSL 验证效验
          */
         X509TrustManager manager = new X509TrustManager() {
+            @Override
             public void checkClientTrusted(X509Certificate[] xcs, String string) {
             }
 
+            @Override
             public void checkServerTrusted(X509Certificate[] xcs, String string) {
             }
 
+            @Override
             public X509Certificate[] getAcceptedIssuers() {
                 return null;
             }
@@ -91,6 +94,7 @@ public class HttpClientUtils {
             e.printStackTrace();
         }
         hostnameVerifier = new HostnameVerifier() {
+            @Override
             public boolean verify(String hostname, SSLSession session) {
                 return true;
             }

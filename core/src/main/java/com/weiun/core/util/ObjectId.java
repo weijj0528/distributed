@@ -69,21 +69,26 @@ public class ObjectId implements Comparable<ObjectId>, java.io.Serializable {
      * @throws IllegalArgumentException if hexString is null
      */
     public static boolean isValid(String s) {
-        if (s == null)
+        if (s == null) {
             return false;
+        }
  
         final int len = s.length();
-        if (len != 24)
+        if (len != 24) {
             return false;
+        }
  
         for (int i = 0; i < len; i++) {
             char c = s.charAt(i);
-            if (c >= '0' && c <= '9')
+            if (c >= '0' && c <= '9') {
                 continue;
-            if (c >= 'a' && c <= 'f')
+            }
+            if (c >= 'a' && c <= 'f') {
                 continue;
-            if (c >= 'A' && c <= 'F')
+            }
+            if (c >= 'A' && c <= 'F') {
                 continue;
+            }
  
             return false;
         }
@@ -126,24 +131,30 @@ public class ObjectId implements Comparable<ObjectId>, java.io.Serializable {
         long lj = 0xFFFFFFFFL;
         lj = j & lj;
         long diff = li - lj;
-        if (diff < Integer.MIN_VALUE)
+        if (diff < Integer.MIN_VALUE) {
             return Integer.MIN_VALUE;
-        if (diff > Integer.MAX_VALUE)
+        }
+        if (diff > Integer.MAX_VALUE) {
             return Integer.MAX_VALUE;
+        }
         return (int) diff;
     }
  
+    @Override
     public int compareTo(ObjectId id) {
-        if (id == null)
+        if (id == null) {
             return -1;
+        }
  
         int x = _compareUnsigned(_time, id._time);
-        if (x != 0)
+        if (x != 0) {
             return x;
+        }
  
         x = _compareUnsigned(_machine, id._machine);
-        if (x != 0)
+        if (x != 0) {
             return x;
+        }
  
         return _compareUnsigned(_inc, id._inc);
     }
@@ -230,8 +241,12 @@ public class ObjectId implements Comparable<ObjectId>, java.io.Serializable {
     @SuppressWarnings("static-access")
 	@Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
  
         ObjectId that = (ObjectId) o;
  

@@ -26,8 +26,9 @@ public class TokenUtils {
 
     public static String parseSidToKey(String sid) throws Exception {
         String[] split = sid.split("__");
-        if (split.length != 2)
+        if (split.length != 2) {
             throw new ErrorMsgException("SID错误，解析出错：" + sid);
+        }
         return split[1];
     }
 

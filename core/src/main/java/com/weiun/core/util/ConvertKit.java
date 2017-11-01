@@ -40,8 +40,9 @@ public class ConvertKit {
      * @return the page info
      */
     public static <E> PageInfo pageInfo(List<E> list, int page, int pageSize, long total) {
-        if (list == null)
+        if (list == null) {
             list = new ArrayList<E>();
+        }
         Page<E> vOfferPage = new Page<E>(page, pageSize);
         for (E e : list) {
             vOfferPage.add(e);

@@ -39,14 +39,17 @@ public class RedisCacheImpl implements Cache {
         this.redisTemplate = redisTemplate;
     }
 
+    @Override
     public void set(String key, Object value) {
         set(key, value, 0);
     }
 
+    @Override
     public void set(String key, Object value, int expirationTime) {
         set(key, value, 0, expirationTime);
     }
 
+    @Override
     public void set(String key, Object value, int timeToIdleSeconds, int expirationTime) {
         RedisConnection conn = null;
         try {
@@ -66,6 +69,7 @@ public class RedisCacheImpl implements Cache {
         }
     }
 
+    @Override
     public void remove(String key) {
         RedisConnection conn = null;
         try {
@@ -83,6 +87,7 @@ public class RedisCacheImpl implements Cache {
         }
     }
 
+    @Override
     public Object get(String key) {
         RedisConnection conn = null;
         try {
@@ -105,6 +110,7 @@ public class RedisCacheImpl implements Cache {
         return null;
     }
 
+    @Override
     public void removeAll() {
         RedisConnection conn = null;
         try {
@@ -119,6 +125,7 @@ public class RedisCacheImpl implements Cache {
         }
     }
 
+    @Override
     public <T> T get(String key, Class<T> clazz) {
         try {
             Object object = get(key);
@@ -136,6 +143,7 @@ public class RedisCacheImpl implements Cache {
         return null;
     }
 
+    @Override
     public <T> List<T> getList(String key, Class<T> clazz) {
         try {
             Object object = get(key);
@@ -154,6 +162,7 @@ public class RedisCacheImpl implements Cache {
         return null;
     }
 
+    @Override
     public <K, T> Map<K, T> getMap(String key, Class<K> keyClazz, Class<T> valClazz) {
         try {
             Object object = get(key);

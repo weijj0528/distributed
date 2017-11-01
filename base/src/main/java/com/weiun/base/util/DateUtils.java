@@ -28,14 +28,17 @@ public class DateUtils {
      */
     public static boolean isRealDate(int year, int month, int day) {
 
-        if (year < 0 || month < 1 || day < 1)
+        if (year < 0 || month < 1 || day < 1) {
             return false;
+        }
 
-        if (month > 12 || day > 31)
+        if (month > 12 || day > 31) {
             return false;
+        }
 
-        if (day > maxDay[month - 1])
+        if (day > maxDay[month - 1]) {
             return false;
+        }
 
         if (month == 2 && day > 28) {
 
@@ -106,8 +109,9 @@ public class DateUtils {
      */
     public static String getDateToString(String format, long millis) {
         Date date = new Date(millis);
-        if (StringUtils.isBlank(format))
+        if (StringUtils.isBlank(format)) {
             format = "yyyy-MM-dd HH:mm:ss";
+        }
         SimpleDateFormat dateFormat = new SimpleDateFormat(format);
         return dateFormat.format(date);
 
@@ -142,8 +146,8 @@ public class DateUtils {
      * @throws Exception
      */
     public static boolean isToday(long millis) throws Exception {
-        long oneday = 24 * 60 * 60 * 1000l;
-        long utc = 8 * 60 * 60 * 1000l;
+        long oneday = 24 * 60 * 60 * 1000L;
+        long utc = 8 * 60 * 60 * 1000L;
         return (System.currentTimeMillis() + utc) / oneday - (millis + utc) / oneday == 0;
     }
 
@@ -486,7 +490,7 @@ public class DateUtils {
         System.out.println(parseDateString("yyyy-MM-dd HH:mm:ss",
                 "2016-09-16 00:00:00"));
         System.out.println(getDateToString("yyyy-MM-dd HH:mm:ss",
-                1472116187303l));
+                1472116187303L));
     }
 
 }

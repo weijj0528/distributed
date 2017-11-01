@@ -168,7 +168,7 @@ public class ObjUtils {
                     setMethod = aClass.getMethod("set" + name, Short.class);
                 }
                 if ("class java.lang.Long".equals(type)) {
-                    defaultValue = 0l;
+                    defaultValue = 0L;
                     setMethod = aClass.getMethod("set" + name, Long.class);
                 }
                 if ("class java.lang.Float".equals(type)) {
@@ -187,8 +187,9 @@ public class ObjUtils {
                     defaultValue = new Date();
                     setMethod = aClass.getMethod("set" + name, Date.class);
                 }
-                if (defaultValue != null && setMethod != null)
+                if (defaultValue != null && setMethod != null) {
                     setMethod.invoke(object, defaultValue);
+                }
             }
         }
     }

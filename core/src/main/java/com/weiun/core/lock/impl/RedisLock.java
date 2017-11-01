@@ -73,8 +73,9 @@ public class RedisLock extends AbstractLock {
         this.lockExpires = lockExpires;
         RedisConnectionFactory connectionFactory = SpringInit.getBean(StringRedisTemplate.class).getConnectionFactory();
         try {
-            if (connectionFactory != null)
+            if (connectionFactory != null) {
                 this.redis = connectionFactory.getConnection();
+            }
         } catch (Exception e) {
             logger.error("【==== Redis分布式锁异常 ====】--->", e);
         }
@@ -103,6 +104,7 @@ public class RedisLock extends AbstractLock {
         }
     }
 
+    @Override
     public boolean tryLock() {
         try {
             byte[] synKey = lockKey.getBytes();
@@ -128,7 +130,7 @@ public class RedisLock extends AbstractLock {
         if (this.redis == null) {
             return false;
         }
-        lockExpireTime = redisTimeMillis() + lockExpires + 1l;
+        lockExpireTime = redisTimeMillis() + lockExpires + 1L;
         byte[] expireMillis = String.valueOf(lockExpireTime).getBytes();
         if (redis.setNX(synKey, expireMillis)) {
             redis.pExpire(synKey, lockExpires);
@@ -148,6 +150,7 @@ public class RedisLock extends AbstractLock {
         return false;
     }
 
+    @Override
     public void unlock() {
         try {
             if (locked) {

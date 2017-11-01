@@ -16,7 +16,8 @@ public class JSONPropertyRowMapper implements RowMapper<JSONObject> {
 		super();
 	}
 
-	public JSONObject mapRow(ResultSet rs, int rowNumber) throws SQLException {
+	@Override
+    public JSONObject mapRow(ResultSet rs, int rowNumber) throws SQLException {
 
 		JSONObject json = new JSONObject();
 		ResultSetMetaData rsmd = rs.getMetaData();
@@ -25,10 +26,11 @@ public class JSONPropertyRowMapper implements RowMapper<JSONObject> {
 		for (int index = 1; index <= columnCount; index++) {
 			String column = JdbcUtils.lookupColumnName(rsmd, index);
 			Object value = rs.getObject(column);
-			if (null != value && !StringUtils.isEmpty(value.toString()))
-				json.put(column, "null".equalsIgnoreCase(value.toString()) ? "" : value);
-			else
-			 json.put(column, "");
+			if (null != value && !StringUtils.isEmpty(value.toString())) {
+                json.put(column, "null".equalsIgnoreCase(value.toString()) ? "" : value);
+            } else {
+                json.put(column, "");
+            }
 		}
 
 		return json;
