@@ -8,6 +8,14 @@ import java.io.Serializable;
  * 业务参数封装
  */
 public class ParamBean implements Serializable, Cloneable {
+    /**
+     * 请求模块
+     */
+    private String module;
+    /**
+     * 请求方法
+     */
+    private String method;
 
     /**
      * 请求版本号
@@ -82,6 +90,22 @@ public class ParamBean implements Serializable, Cloneable {
         sb.append("\",\"uid\":\"").append(uid);
         sb.append("\"}");
         return sb.toString();
+    }
+
+    public String getModule() {
+        return module;
+    }
+
+    public void setModule(String module) {
+        this.module = module;
+    }
+
+    public String getMethod() {
+        return method;
+    }
+
+    public void setMethod(String method) {
+        this.method = method;
     }
 
     public String getIp() {
