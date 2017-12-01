@@ -1,13 +1,11 @@
 package com.weiun.core.aop;
 
-import com.alibaba.dubbo.rpc.RpcException;
-import com.alibaba.fastjson.JSON;
 import com.weiun.base.bean.ParamBean;
 import com.weiun.base.bean.ResultBean;
-import com.weiun.base.exception.*;
+import com.weiun.base.exception.NoAuthException;
 import com.weiun.core.annotation.LoginCheck;
 import com.weiun.core.annotation.RemoveLoginCheck;
-import com.weiun.core.system.SysConfig;
+import net.sf.json.JSONArray;
 import org.apache.commons.lang.StringUtils;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -15,10 +13,16 @@ import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.aop.ThrowsAdvice;
-import org.springframework.dao.DataAccessException;
 
+import java.lang.reflect.InvocationTargetException;
 import java.text.MessageFormat;
 
+/**
+ * The type Exception handler.
+ * 错误切面处理
+ *
+ * @author weiun
+ */
 public class ExceptionHandler implements ThrowsAdvice {
 
     private static final Logger logger = LoggerFactory.getLogger(ExceptionHandler.class);
@@ -57,38 +61,26 @@ public class ExceptionHandler implements ThrowsAdvice {
                     throw new NoAuthException();
                 }
             }
-
             resultBean = (ResultBean) proceedingJoinPoint.proceed();
         } catch (Throwable e) {
-            if (e instanceof ErrorMsgException) {
-                resultBean = new ResultBean((ErrorMsgException) e);
-            } else if (e instanceof NoAuthException) {
-                resultBean = new ResultBean(ErrorMsgEnum.NoAuthException);
-            } else if (e instanceof BadRequestException) {
-                resultBean = new ResultBean(ErrorMsgEnum.badRequestException);
-            } else if (e instanceof InsufficientBalanceException) {
-                resultBean = new ResultBean(ErrorMsgEnum.Insufficient_Balance);
-            } else if (e instanceof RpcException) {
-                resultBean = new ResultBean(new ErrorMsgException(ErrorMsgEnum.ERROR_SERVER, "内部服务提供异常"));
-            } else {
-                if (e instanceof DataAccessException) {
-                    resultBean = new ResultBean(ErrorMsgEnum.ERROR_SERVER, SysConfig.getProperty("name") + " 服务数据库异常");
-                } else {
-                    resultBean = new ResultBean(ErrorMsgEnum.ERROR_SERVER);
-                }
-                if (proceedingJoinPoint != null) {
-                    Class<? extends Object> forName = proceedingJoinPoint.getTarget().getClass();
-                    className = forName.getSimpleName();
-                    methodName = proceedingJoinPoint.getSignature().getName();
-                }
-                if (bizParamBean != null) {
-                    String logInfo = MessageFormat.format("[ERROR][{0}][{1}][{2}][{3}][{4}]", bizParamBean.getIp(), className, methodName,
-                            bizParamBean.getUid(), bizParamBean.getParam());
-                    logger.error(logInfo, e);
-                } else {
-                    logger.error(JSON.toJSONString(param), e);
-                }
+            if (e instanceof InvocationTargetException) {
+                e = ((InvocationTargetException) e).getTargetException();
             }
+            if (proceedingJoinPoint != null) {
+                Class<? extends Object> forName = proceedingJoinPoint.getTarget().getClass();
+                className = forName.getSimpleName();
+                methodName = proceedingJoinPoint.getSignature().getName();
+                String logInfo = MessageFormat.format("[{0}][{1}]:{2}",
+                        className, methodName, JSONArray.fromObject(param));
+                if (bizParamBean != null) {
+                    logInfo = MessageFormat.format("[ER][{0}][{1}][{2}][{3}][{4}][{5}][{6}]",
+                            bizParamBean.getIp(), className, methodName,
+                            bizParamBean.getUid(), bizParamBean.getModel(),
+                            bizParamBean.getVersion(), bizParamBean.getParam());
+                }
+                logger.error(logInfo, e);
+            }
+            throw e;
         }
         return resultBean;
     }

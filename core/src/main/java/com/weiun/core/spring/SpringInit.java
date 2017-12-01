@@ -8,6 +8,7 @@ import org.springframework.context.ApplicationContextAware;
 
 /**
  * Spring 容器 主要手动获取bean、
+ * @author weiun
  */
 public class SpringInit implements ApplicationContextAware {
 

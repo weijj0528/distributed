@@ -10,12 +10,17 @@ import java.util.Properties;
 
 /**
  * 系统启动时加载
+ *
+ * @author
  */
 public class SysConfig {
 
     private static final Logger logger = LoggerFactory.getLogger(SysConfig.class);
 
-    // 本地资源
+    /**
+     * The Location.
+     * 配置文件
+     */
     Resource location;
 
     public void setLocation(Resource location) {

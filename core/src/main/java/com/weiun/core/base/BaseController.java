@@ -1,8 +1,8 @@
 package com.weiun.core.base;
 
 import com.mysql.jdbc.exceptions.MySQLSyntaxErrorException;
-import com.weiun.base.exception.*;
 import com.weiun.base.bean.ResultBean;
+import com.weiun.base.exception.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * Created by vijay on 2017/4/13.
+ * Created by weiun on 2017/4/13.
+ *
+ * @author weiun
  */
 public class BaseController {
 
