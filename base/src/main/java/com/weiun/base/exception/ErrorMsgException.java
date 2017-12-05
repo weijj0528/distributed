@@ -20,6 +20,9 @@ public class ErrorMsgException extends BaseException {
 	 */
 	private String code;
 
+	public ErrorMsgException() {
+	}
+
 	/**
 	 * 创建 ERROR_ALERT 0e00
 	 *  错误提示异常 只是用来展示
@@ -36,8 +39,6 @@ public class ErrorMsgException extends BaseException {
 
 	/**
 	 * @author Johnson.Jia
-	 * @param msg 	错误 信息
-	 * @param code 	错误 编码
 	 */
 	public ErrorMsgException(ErrorMsgEnum errorMsgEnum) {
 		this.msg = errorMsgEnum.getMsg();
@@ -46,7 +47,6 @@ public class ErrorMsgException extends BaseException {
 	/**
 	 * @author Johnson.Jia
 	 * @param msg 	错误 信息
-	 * @param code 	错误 编码
 	 */
 	public ErrorMsgException(ErrorMsgEnum errorMsgEnum,String msg) {
 		this.msg = msg;
