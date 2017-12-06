@@ -32,17 +32,17 @@ dependencies {
     compile group: 'com.alibaba', name: 'druid', version: '1.0.29'
 
     // spring
-    compile group: 'org.springframework', name: 'spring-core', version: '4.3.7.RELEASE'
-    compile group: 'org.springframework', name: 'spring-beans', version: '4.3.7.RELEASE'
-    compile group: 'org.springframework', name: 'spring-context', version: '4.3.7.RELEASE'
-    compile group: 'org.springframework', name: 'spring-context-support', version: '4.3.7.RELEASE'
-    compile group: 'org.springframework', name: 'spring-oxm', version: '4.3.7.RELEASE'
-    compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.7.RELEASE'
-    compile group: 'org.springframework', name: 'spring-orm', version: '4.3.7.RELEASE'
-    compile group: 'org.springframework', name: 'spring-aop', version: '4.3.7.RELEASE'
-    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.7.RELEASE'
-    compile group: 'org.springframework', name: 'spring-web', version: '4.3.7.RELEASE'
-    compile group: 'org.springframework', name: 'spring-test', version: '4.3.7.RELEASE'
+    compile group: 'org.springframework', name: 'spring-core', version: '4.3.12.RELEASE'
+    compile group: 'org.springframework', name: 'spring-beans', version: '4.3.12.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.12.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context-support', version: '4.3.12.RELEASE'
+    compile group: 'org.springframework', name: 'spring-oxm', version: '4.3.12.RELEASE'
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.12.RELEASE'
+    compile group: 'org.springframework', name: 'spring-orm', version: '4.3.12.RELEASE'
+    compile group: 'org.springframework', name: 'spring-aop', version: '4.3.12.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.12.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version: '4.3.12.RELEASE'
+    compile group: 'org.springframework', name: 'spring-test', version: '4.3.12.RELEASE'
     // 解析 User-Agent 字符串 操作系统/Web浏览器 /移动设别/平板设别/Email 客户端/ 类似Gmail和Hotmail的客户端
     compile group: 'eu.bitwalker', name: 'UserAgentUtils', version: '1.20'
     compile group: 'org.aspectj', name: 'aspectjrt', version: '1.8.10'
@@ -56,7 +56,7 @@ dependencies {
     // dubbox
     compile group: 'com.alibaba', name: 'dubbo', version: '2.8.4'
     compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.4.9'
-    compile group: 'com.101tec', name: 'zkclient', version: '0.3'
+    compile group: 'com.101tec', name: 'zkclient', version: '0.10'
     compile group: 'com.esotericsoftware.kryo', name: 'kryo', version: '2.24.0'
     compile group: 'de.javakaffee', name: 'kryo-serializers', version: '0.26'
     // 缓存
