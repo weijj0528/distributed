@@ -143,7 +143,7 @@ public class HttpClientUtils {
      * @return
      * @author Johnson.Jia
      */
-    public static JSONObject httpPost(String url, Map<String, String> param) {
+    public static JSONObject httpPost(String url, Map<String, String> param) throws Exception {
         return httpPost(url, param, null);
     }
 
@@ -156,7 +156,7 @@ public class HttpClientUtils {
      * @return
      * @author Johnson.Jia
      */
-    public static JSONObject httpPost(String url, Map<String, String> param, String charset) {
+    public static JSONObject httpPost(String url, Map<String, String> param, String charset) throws Exception {
         CloseableHttpClient httpClient = getHttpClient();
         HttpResponse httpResponse = null;
         HttpPost httpPost = null;
@@ -180,6 +180,7 @@ public class HttpClientUtils {
             result = EntityUtils.toString(httpResponse.getEntity(), charset);
         } catch (Exception e) {
             e.printStackTrace();
+            throw e;
         } finally {
             httpPost.releaseConnection();
         }
@@ -198,7 +199,7 @@ public class HttpClientUtils {
      * @return
      * @author Johnson.Jia
      */
-    public static JSONObject httpPostJson(String url, Map<String, String> headers, JSONObject param) {
+    public static JSONObject httpPostJson(String url, Map<String, String> headers, JSONObject param) throws Exception {
         return httpPostJson(url, headers, param, null);
     }
 
@@ -212,7 +213,7 @@ public class HttpClientUtils {
      * @return
      * @author Johnson.Jia
      */
-    public static JSONObject httpPostJson(String url, Map<String, String> headers, JSONObject param, String charset) {
+    public static JSONObject httpPostJson(String url, Map<String, String> headers, JSONObject param, String charset) throws Exception {
         CloseableHttpClient httpClient = getHttpClient();
         HttpResponse httpResponse = null;
         HttpPost httpPost = null;
@@ -237,6 +238,7 @@ public class HttpClientUtils {
             result = EntityUtils.toString(httpResponse.getEntity(), charset);
         } catch (Exception e) {
             e.printStackTrace();
+            throw e;
         } finally {
             httpPost.releaseConnection();
         }
@@ -253,7 +255,7 @@ public class HttpClientUtils {
      * @return
      * @author Johnson.Jia
      */
-    public static JSONObject httpGet(String url) {
+    public static JSONObject httpGet(String url) throws Exception {
         return httpGet(url, null);
     }
 
@@ -265,7 +267,7 @@ public class HttpClientUtils {
      * @return
      * @author Johnson.Jia
      */
-    public static JSONObject httpGet(String url, String charset) {
+    public static JSONObject httpGet(String url, String charset) throws Exception {
         JSONObject result = new JSONObject();
         CloseableHttpClient httpClient = getHttpClient();
         HttpResponse httpResponse = null;
@@ -279,6 +281,7 @@ public class HttpClientUtils {
             result.put("result", EntityUtils.toString(entity, charset));
         } catch (Exception e) {
             e.printStackTrace();
+            throw e;
         } finally {
             httpGet.releaseConnection();
         }
