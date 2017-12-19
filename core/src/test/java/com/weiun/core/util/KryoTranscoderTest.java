@@ -44,7 +44,7 @@ public class KryoTranscoderTest {
         byte[] kryo = KryoTranscoder.serialize(jsonObject);
         System.out.println("kryo:" + kryo.length);
         for (int i = 0; i < 100000; i++) {
-            jsonObject = KryoTranscoder.deserialize(kryo, JSONObject.class);
+            jsonObject = KryoTranscoder.deserialize(kryo);
         }
         System.out.println(JSON.toJSONString(jsonObject));
         long t3 = System.currentTimeMillis();
