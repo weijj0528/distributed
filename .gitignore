@@ -9,7 +9,7 @@ tmp/
 *.swp
 *~.nib
 local.properties
-.idea/
+/.idea
 .dubbox/
 logs
 out
