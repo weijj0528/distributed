@@ -1,8 +1,8 @@
 package com.weiun.core.cache.impl;
 
 import com.weiun.base.exception.ErrorMsgException;
-import com.weiun.base.util.Transcoder;
 import com.weiun.core.cache.Cache;
+import com.weiun.core.util.KryoTranscoder;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -55,7 +55,7 @@ public class RedisCacheImpl implements Cache {
         try {
             conn = redisTemplate.getConnectionFactory().getConnection();
             if (!conn.isClosed() && value != null) {
-                conn.set(key.getBytes(), Transcoder.serialize(value));
+                conn.set(key.getBytes(), KryoTranscoder.serialize(value));
                 if (expirationTime > 0) {
                     conn.expire(key.getBytes(), expirationTime);
                 }
@@ -96,7 +96,7 @@ public class RedisCacheImpl implements Cache {
             if (StringUtils.isNotEmpty(key) && !conn.isClosed()) {
                 byte[] in = conn.get(key.getBytes());
                 if (in != null && in.length > 0) {
-                    obj = Transcoder.deserialize(in);
+                    obj = KryoTranscoder.deserialize(in, Object.class);
                 }
             }
             return obj;
