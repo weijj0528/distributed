@@ -80,4 +80,32 @@ public class KryoTranscoder {
         }
         return null;
     }
+
+    /**
+     * 反序列化
+     *
+     * @param in
+     * @return
+     * @throws Exception
+     * @author weiun
+     */
+    public static Object deserialize(byte[] in) throws Exception {
+        ByteArrayInputStream bis = new ByteArrayInputStream(in);
+        Input input = new Input(bis);
+        try {
+            if (in != null) {
+                return kryos.get().readClassAndObject(input);
+            }
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            try {
+                bis.close();
+                input.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return null;
+    }
 }

@@ -96,30 +96,10 @@ public class RedisCacheImpl implements Cache {
             if (StringUtils.isNotEmpty(key) && !conn.isClosed()) {
                 byte[] in = conn.get(key.getBytes());
                 if (in != null && in.length > 0) {
-                    obj = KryoTranscoder.deserialize(in, Object.class);
+                    obj = KryoTranscoder.deserialize(in);
                 }
             }
             return obj;
-        } catch (Exception e) {
-            logger.error(LOG_ERROR_REDIS_CACHE, e);
-        } finally {
-            if (conn != null) {
-                conn.close();
-            }
-        }
-        return null;
-    }
-
-    private <T> T getObject(String key, Class<T> clazz) {
-        RedisConnection conn = null;
-        try {
-            conn = redisTemplate.getConnectionFactory().getConnection();
-            if (StringUtils.isNotEmpty(key) && !conn.isClosed()) {
-                byte[] in = conn.get(key.getBytes());
-                if (in != null && in.length > 0) {
-                    return KryoTranscoder.deserialize(in, clazz);
-                }
-            }
         } catch (Exception e) {
             logger.error(LOG_ERROR_REDIS_CACHE, e);
         } finally {
@@ -148,7 +128,15 @@ public class RedisCacheImpl implements Cache {
     @Override
     public <T> T get(String key, Class<T> clazz) {
         try {
-            return getObject(key, clazz);
+            Object object = get(key);
+            if (object == null) {
+                return null;
+            }
+            if (object.getClass() == clazz) {
+                return (T) object;
+            } else {
+                throw new ErrorMsgException(" 缓存类型不匹配  redis cache class !=  Class<T> clazz");
+            }
         } catch (Exception e) {
             logger.error(LOG_ERROR_REDIS_CACHE, e);
         }
@@ -158,7 +146,7 @@ public class RedisCacheImpl implements Cache {
     @Override
     public <T> List<T> getList(String key, Class<T> clazz) {
         try {
-            List object = getObject(key, List.class);
+            Object object = get(key);
             if (object == null) {
                 return null;
             }
@@ -177,7 +165,7 @@ public class RedisCacheImpl implements Cache {
     @Override
     public <K, T> Map<K, T> getMap(String key, Class<K> keyClazz, Class<T> valClazz) {
         try {
-            Map object = getObject(key, Map.class);
+            Object object = get(key);
             if (object == null) {
                 return null;
             }

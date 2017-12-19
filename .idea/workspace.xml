@@ -7,6 +7,7 @@
     <list default="true" id="042d37d8-4f90-42f6-9e9c-d8bd12d96619" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/cache/impl/RedisCacheImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/cache/impl/RedisCacheImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/KryoTranscoder.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/KryoTranscoder.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -289,20 +290,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="RedisCacheImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/cache/impl/RedisCacheImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="120" column="17" lean-forward="true" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1229,6 +1217,40 @@
               <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wei-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wei-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1414,7 +1436,7 @@
       <recent name="com.weiun.core.util" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.wei-java [publish]">
+  <component name="RunManager" selected="Gradle.wei-java [publishToMavenLocal]">
     <configuration default="false" name="KryoTranscoderTest.serialize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1428,32 +1450,6 @@
       <option name="PACKAGE_NAME" value="com.weiun.core.util" />
       <option name="MAIN_CLASS_NAME" value="com.weiun.core.util.KryoTranscoderTest" />
       <option name="METHOD_NAME" value="serialize" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/core" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="KryoTranscoderTest.deserialize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.weiun.core.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="core_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.weiun.core.util" />
-      <option name="MAIN_CLASS_NAME" value="com.weiun.core.util.KryoTranscoderTest" />
-      <option name="METHOD_NAME" value="deserialize" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1515,6 +1511,24 @@
         <option name="taskNames">
           <list>
             <option value="publish" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="wei-java [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -2168,18 +2182,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.KryoTranscoderTest.serialize" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.KryoTranscoderTest.deserialize" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.wei-java [clean]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.wei-java [build]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.wei-java [publish]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.wei-java [clean]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.wei-java [build]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.wei-java [publish]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.wei-java [publishToMavenLocal]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.wei-java [publish]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.wei-java [build]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.wei-java [clean]" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.KryoTranscoderTest.serialize" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.KryoTranscoderTest.deserialize" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.wei-java [publishToMavenLocal]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.wei-java [publish]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.wei-java [build]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.wei-java [clean]" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.KryoTranscoderTest.serialize" />
       </list>
     </recent_temporary>
   </component>
@@ -2219,7 +2233,7 @@
       <workItem from="1513058976879" duration="72000" />
       <workItem from="1513575022119" duration="744000" />
       <workItem from="1513587197133" duration="256000" />
-      <workItem from="1513605291875" duration="11484000" />
+      <workItem from="1513605291875" duration="12156000" />
     </task>
     <task id="LOCAL-00001" summary="配置调整">
       <created>1509000822942</created>
@@ -2312,7 +2326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513653465139</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=",Redis缓存调整">
+      <created>1513654348460</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1513654348460</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2348,7 +2369,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32772000" />
+    <option name="totallyTimeSpent" value="33444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -2771,18 +2792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/KryoTranscoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="31" column="48" lean-forward="true" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#347#477#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.8.4/dubbo-2.8.4-sources.jar!/com/alibaba/dubbo/common/serialize/support/kryo/ThreadLocalKryoFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -2823,10 +2832,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/util/KryoTranscoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="91" column="36" lean-forward="false" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/weiun/core/cache/impl/RedisCacheImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="120" column="17" lean-forward="true" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
+        <state relative-caret-position="438">
+          <caret line="98" column="57" lean-forward="true" selection-start-line="98" selection-start-column="57" selection-end-line="98" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
