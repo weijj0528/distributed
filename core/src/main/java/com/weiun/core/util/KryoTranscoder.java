@@ -30,27 +30,12 @@ public class KryoTranscoder {
      * @author weiun
      */
     public static byte[] serialize(Object value) {
-        if (value == null) {
-            throw new NullPointerException("Can't serialize null");
-        }
-        byte[] rv = null;
-        ByteArrayOutputStream bos = new ByteArrayOutputStream();
-        Output output = new Output(bos);
-        try {
-            kryos.get().writeObject(output, value);
-            output.flush();
-            rv = bos.toByteArray();
-        } catch (Exception e) {
-            throw new IllegalArgumentException("Non-serializable object", e);
-        } finally {
-            try {
-                bos.close();
-                output.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        return rv;
+        Kryo kryo = kryos.get();
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        Output output = new Output(byteArrayOutputStream);
+        kryo.writeClassAndObject(output, value);
+        output.close();
+        return byteArrayOutputStream.toByteArray();
     }
 
     /**
@@ -61,51 +46,12 @@ public class KryoTranscoder {
      * @throws Exception
      * @author weiun
      */
-    public static <T> T deserialize(byte[] in, Class<T> clazz) throws Exception {
-        ByteArrayInputStream bis = new ByteArrayInputStream(in);
-        Input input = new Input(bis);
-        try {
-            if (in != null) {
-                return kryos.get().readObject(input, clazz);
-            }
-        } catch (Exception e) {
-            throw e;
-        } finally {
-            try {
-                bis.close();
-                input.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        return null;
+    public static <T> T deserialize(byte[] in) throws Exception {
+        Kryo kryo = kryos.get();
+        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(in);
+        Input input = new Input(byteArrayInputStream);
+        input.close();
+        return (T) kryo.readClassAndObject(input);
     }
 
-    /**
-     * 反序列化
-     *
-     * @param in
-     * @return
-     * @throws Exception
-     * @author weiun
-     */
-    public static Object deserialize(byte[] in) throws Exception {
-        ByteArrayInputStream bis = new ByteArrayInputStream(in);
-        Input input = new Input(bis);
-        try {
-            if (in != null) {
-                return kryos.get().readClassAndObject(input);
-            }
-        } catch (Exception e) {
-            throw e;
-        } finally {
-            try {
-                bis.close();
-                input.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        return null;
-    }
 }
