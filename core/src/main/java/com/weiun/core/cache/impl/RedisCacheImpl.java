@@ -110,6 +110,26 @@ public class RedisCacheImpl implements Cache {
         return null;
     }
 
+    private <T> T getObject(String key, Class<T> clazz) {
+        RedisConnection conn = null;
+        try {
+            conn = redisTemplate.getConnectionFactory().getConnection();
+            if (StringUtils.isNotEmpty(key) && !conn.isClosed()) {
+                byte[] in = conn.get(key.getBytes());
+                if (in != null && in.length > 0) {
+                    return KryoTranscoder.deserialize(in, clazz);
+                }
+            }
+        } catch (Exception e) {
+            logger.error(LOG_ERROR_REDIS_CACHE, e);
+        } finally {
+            if (conn != null) {
+                conn.close();
+            }
+        }
+        return null;
+    }
+
     @Override
     public void removeAll() {
         RedisConnection conn = null;
@@ -128,15 +148,7 @@ public class RedisCacheImpl implements Cache {
     @Override
     public <T> T get(String key, Class<T> clazz) {
         try {
-            Object object = get(key);
-            if (object == null) {
-                return null;
-            }
-            if (object.getClass() == clazz) {
-                return (T) object;
-            } else {
-                throw new ErrorMsgException(" 缓存类型不匹配  redis cache class !=  Class<T> clazz");
-            }
+            return getObject(key, clazz);
         } catch (Exception e) {
             logger.error(LOG_ERROR_REDIS_CACHE, e);
         }
