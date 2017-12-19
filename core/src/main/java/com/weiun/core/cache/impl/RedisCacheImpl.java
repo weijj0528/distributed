@@ -158,7 +158,7 @@ public class RedisCacheImpl implements Cache {
     @Override
     public <T> List<T> getList(String key, Class<T> clazz) {
         try {
-            Object object = get(key);
+            List object = getObject(key, List.class);
             if (object == null) {
                 return null;
             }
@@ -177,7 +177,7 @@ public class RedisCacheImpl implements Cache {
     @Override
     public <K, T> Map<K, T> getMap(String key, Class<K> keyClazz, Class<T> valClazz) {
         try {
-            Object object = get(key);
+            Map object = getObject(key, Map.class);
             if (object == null) {
                 return null;
             }
