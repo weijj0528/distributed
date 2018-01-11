@@ -11,11 +11,11 @@ import java.io.Serializable;
 /**
  * 返回结果封装
  *
- * @author Johnson.Jia
+ * @author
  */
 public class ResultBean implements Serializable, Cloneable {
     /**
-     * @author Johnson.Jia
+     * @author
      */
     private static final long serialVersionUID = 8632964679110167394L;
     /**

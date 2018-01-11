@@ -21,6 +21,18 @@ public class ParamBean implements Serializable, Cloneable {
      * 请求版本号
      */
     private String version;
+    /**
+     * 时间戳字符串
+     */
+    private String time;
+    /**
+     * 设备ID
+     */
+    private String devices;
+    /**
+     * 签名
+     */
+    private String sign;
 
     /**
      * 请求客户端 模型 类型
@@ -69,6 +81,26 @@ public class ParamBean implements Serializable, Cloneable {
         return param;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{\"ip\":\"").append(ip);
+        sb.append("\",\"model\":\"").append(model);
+        sb.append("\",\"version\":\"").append(version);
+        sb.append("\",\"uid\":\"").append(uid);
+        sb.append("\"}");
+        return sb.toString();
+    }
+
+    @Override
+    public ParamBean clone() {
+        try {
+            return (ParamBean) super.clone();
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
     public void setParam(JSONObject param) {
         this.param = param;
     }
@@ -79,17 +111,6 @@ public class ParamBean implements Serializable, Cloneable {
 
     public void setUid(String uid) {
         this.uid = uid;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("{\"ip\":\"").append(ip);
-        sb.append("\",\"model\":\"").append(model);
-        sb.append("\",\"version\":\"").append(version);
-        sb.append("\",\"uid\":\"").append(uid);
-        sb.append("\"}");
-        return sb.toString();
     }
 
     public String getModule() {
@@ -148,12 +169,28 @@ public class ParamBean implements Serializable, Cloneable {
         this.identity = identity;
     }
 
-    @Override
-    public ParamBean clone() {
-        try {
-            return (ParamBean) super.clone();
-        } catch (Exception e) {
-            return null;
-        }
+    public void setTime(String time) {
+        this.time = time;
     }
+
+    public String getDevices() {
+        return devices;
+    }
+
+    public void setDevices(String devices) {
+        this.devices = devices;
+    }
+
+    public String getSign() {
+        return sign;
+    }
+
+    public void setSign(String sign) {
+        this.sign = sign;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
 }
