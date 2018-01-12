@@ -52,4 +52,21 @@ public class KryoTranscoderTest {
         System.out.println("KryoTranscoder:" + (t3 - t2));
     }
 
+    @org.junit.Test
+    public void xml() throws Exception {
+        String s = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>  \n" +
+                "<CONFIG>  \n" +
+                "    <VALUE>  \n" +
+                "        <!-- mysql连接设置 -->  \n" +
+                "        <server>127.0.0.1</server>  \n" +
+                "        <dbname>users</dbname>  \n" +
+                "        <user>root</user>  \n" +
+                "        <pass>pass</pass>  \n" +
+                "        <port>3306</port>  \n" +
+                "    </VALUE>  \n" +
+                "</CONFIG> ";
+        JSONObject jsonObject = XmlUtil.toJson(s);
+        System.out.println(jsonObject.toJSONString());
+    }
+
 }

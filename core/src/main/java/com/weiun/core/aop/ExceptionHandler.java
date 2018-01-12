@@ -1,11 +1,11 @@
 package com.weiun.core.aop;
 
+import com.alibaba.fastjson.JSON;
 import com.weiun.base.bean.ParamBean;
 import com.weiun.base.bean.ResultBean;
 import com.weiun.base.exception.NoAuthException;
 import com.weiun.core.annotation.LoginCheck;
 import com.weiun.core.annotation.RemoveLoginCheck;
-import net.sf.json.JSONArray;
 import org.apache.commons.lang.StringUtils;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -71,7 +71,7 @@ public class ExceptionHandler implements ThrowsAdvice {
                 className = forName.getSimpleName();
                 methodName = proceedingJoinPoint.getSignature().getName();
                 String logInfo = MessageFormat.format("[{0}][{1}]:{2}",
-                        className, methodName, JSONArray.fromObject(param));
+                        className, methodName, JSON.toJSONString(param));
                 if (bizParamBean != null) {
                     logInfo = MessageFormat.format("[ER][{0}][{1}][{2}][{3}][{4}][{5}][{6}]",
                             bizParamBean.getIp(), className, methodName,
