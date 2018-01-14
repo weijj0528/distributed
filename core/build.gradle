@@ -52,7 +52,7 @@ dependencies {
     compile group: 'org.codehaus.jackson', name: 'jackson-core-lgpl', version: '1.9.13'
     compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.13'
     // dubbo
-    compile group: 'com.alibaba', name: 'dubbo', version: '2.8.4'
+    compile group: 'com.alibaba', name: 'dubbo', version: '2.6.0'
     compile group: 'com.101tec', name: 'zkclient', version: '0.10'
     compile group: 'de.javakaffee', name: 'kryo-serializers', version: '0.42'
     compile group: 'com.esotericsoftware', name: 'kryo', version: '4.0.1'
