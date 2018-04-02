@@ -1,5 +1,7 @@
 package com.weiun.base.util;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.regex.Pattern;
 
 /**
@@ -13,12 +15,12 @@ public class StrUtils {
      * @param args the input arguments
      */
     public static void main(String[] args) {
-        String ids = "0,1,2,3,4,5,6,7,8,9,10";
-        for (String id : ids.split(",")) {
-            String mid = idToMid(id);
-            System.out.println("mid:" + mid);
-            System.out.println("id:" + midToId(mid));
+        Set<String> ids = new HashSet<String>();
+        for (int i = 0; i < 10000000; i++) {
+            String mid = idToMid(String.valueOf(i));
+            ids.add(mid);
         }
+        System.out.println(ids.size());
     }
 
     /**
