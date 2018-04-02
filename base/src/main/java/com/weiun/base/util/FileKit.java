@@ -16,13 +16,13 @@
 
 package com.weiun.base.util;
 
+import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.lang.StringUtils;
+
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-
-import org.apache.commons.codec.binary.Base64;
-import org.apache.commons.lang.StringUtils;
 
 /**
  * FileKit.
@@ -57,14 +57,15 @@ public class FileKit {
      */
     public static String saveByBase64Str(String imgStr, String fileName, String saveDir) throws Exception {
         // 对字节数组字符串进行Base64解码
-        if (StringUtils.isEmpty(imgStr)) // 图像数据为空
-        {
+        // 图像数据为空
+        if (StringUtils.isEmpty(imgStr)) {
             return null;
         }
         // Base64解码
         byte[] bytes = Base64.decodeBase64(imgStr);
         for (int i = 0; i < bytes.length; ++i) {
-            if (bytes[i] < 0) {// 调整异常数据
+            // 调整异常数据
+            if (bytes[i] < 0) {
                 bytes[i] += 256;
             }
         }
@@ -83,8 +84,8 @@ public class FileKit {
      */
     public static String saveByInputStream(InputStream is, String fileName, String saveDir) throws Exception {
         // 对字节数组字符串进行Base64解码
-        if (is == null) // 输入流为空
-        {
+        // 输入流为空
+        if (is == null) {
             return null;
         }
         File dir = new File(saveDir);
