@@ -2,6 +2,7 @@ package com.weiun.base.bean;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.weiun.base.exception.ErrorMsgEnum;
 import com.weiun.base.exception.ErrorMsgException;
 import com.weiun.base.util.ObjUtils;
@@ -30,6 +31,15 @@ public class ResultBean implements Serializable, Cloneable {
      * 业务返回值
      */
     private JSONObject result;
+
+    public static SerializerFeature[] serializerFeature = {
+            SerializerFeature.WriteNullStringAsEmpty,
+            SerializerFeature.WriteMapNullValue,
+            SerializerFeature.WriteNullNumberAsZero,
+            SerializerFeature.WriteNullListAsEmpty,
+            SerializerFeature.WriteNullBooleanAsFalse,
+            SerializerFeature.WriteDateUseDateFormat
+    };
 
     public ResultBean() {
         super();
@@ -76,7 +86,7 @@ public class ResultBean implements Serializable, Cloneable {
             if (result.getClass() == JSONObject.class) {
                 this.result = (JSONObject) result;
             } else {
-                this.result = JSON.parseObject(JSON.toJSONString(result));
+                this.result = JSON.parseObject(JSON.toJSONString(result, serializerFeature));
             }
         }
     }
