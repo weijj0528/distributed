@@ -164,6 +164,7 @@ public class HttpClientUtils {
         int status = 400;
         try {
             httpPost = new HttpPost(url);
+            httpPost.addHeader("Content-Type","application/x-www-form-urlencoded");
             if (param != null) {
                 List<NameValuePair> list = new LinkedList<NameValuePair>();
                 Iterator<Entry<String, String>> iterator = param.entrySet().iterator();
