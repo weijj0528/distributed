@@ -3,6 +3,7 @@ package com.weiun.core.aop;
 import com.alibaba.fastjson.JSON;
 import com.weiun.base.bean.ParamBean;
 import com.weiun.base.bean.ResultBean;
+import com.weiun.base.exception.BaseException;
 import com.weiun.base.exception.NoAuthException;
 import com.weiun.core.annotation.LoginCheck;
 import com.weiun.core.annotation.RemoveLoginCheck;
@@ -78,7 +79,11 @@ public class ExceptionHandler implements ThrowsAdvice {
                             bizParamBean.getUid(), bizParamBean.getModel(),
                             bizParamBean.getVersion(), bizParamBean.getParam());
                 }
-                logger.error(logInfo, e);
+                if (e instanceof BaseException) {
+                    logger.warn(logInfo, e);
+                } else {
+                    logger.error(logInfo, e);
+                }
             }
             throw e;
         }
