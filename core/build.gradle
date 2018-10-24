@@ -11,9 +11,12 @@ repositories {
     mavenLocal()
     // 局域网Maven仓库
     maven {
-        url "http://lovejiayuan.cn:8081/repository/maven-releases/"
+        url "https://repo.rdc.aliyun.com/repository/35936-snapshot-wPlgaM"
     }
-    mavenCentral()
+    // 阿里云
+    maven {
+        url "http://maven.aliyun.com/nexus/content/groups/public"
+    }
 }
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
@@ -123,11 +126,11 @@ publishing {
         }
     }
     repositories {
-        maven {
-            url "http://maven.lovejiayuan.cn:8081/repository/maven-releases/"
+        maven{
+            url "https://repo.rdc.aliyun.com/repository/35936-snapshot-wPlgaM"
             credentials {
-                username 'admin'
-                password 'weijj0528'
+                username 'XIvnTE'
+                password 'Tee1Q6ondj'
             }
         }
     }
