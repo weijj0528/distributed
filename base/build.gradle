@@ -101,8 +101,8 @@ publishing {
         }
     }
     repositories {
-        maven{
-            url "https://repo.rdc.aliyun.com/repository/35936-snapshot-wPlgaM"
+        maven {
+            url "https://repo.rdc.aliyun.com/repository/35936-release-uRTHTa"
             credentials {
                 username 'XIvnTE'
                 password 'Tee1Q6ondj'

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="042d37d8-4f90-42f6-9e9c-d8bd12d96619" name="Default" comment="优化调整">
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/base/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/base/.gradle/" />
@@ -69,20 +66,20 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="wei-java" type="f1a62948:ProjectNode" />
-                <item name=":base" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="wei-java" type="f1a62948:ProjectNode" />
-                <item name=":base" type="2d1252cf:ModuleNode" />
+                <item name="wei-java" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="wei-java" type="f1a62948:ProjectNode" />
-                <item name=":base" type="2d1252cf:ModuleNode" />
+                <item name="wei-java" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="wei-java" type="f1a62948:ProjectNode" />
+                <item name=":base" type="2d1252cf:ModuleNode" />
               </path>
             </expand>
             <select />
@@ -100,14 +97,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="3" />
+          <entry key="gradle" value="4" />
           <entry key="java" value="1" />
           <entry key="properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="3" />
+          <entry key="Groovy" value="4" />
           <entry key="JAVA" value="1" />
           <entry key="Properties" value="1" />
         </counts>
@@ -125,30 +122,27 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/src/main/java/com/weiun/base/util/DateUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/local.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradlew">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="59" />
+            <state relative-caret-position="224">
+              <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -156,8 +150,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="312">
+              <caret line="116" column="77" selection-start-line="116" selection-start-column="77" selection-end-line="116" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -974,6 +977,11 @@
             <path>
               <item name="wei-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="wei-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="base" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="wei-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wei-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
@@ -986,7 +994,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544681376082" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544681809805" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../tiny-spring" />
@@ -1009,7 +1017,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.wei-java [build]">
+  <component name="RunManager" selected="Gradle.wei-java [publish]">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -1331,7 +1339,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="wei-java [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="wei-java [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -1342,25 +1350,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="wei-java [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
+            <option value="assemble" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -1379,6 +1369,24 @@
         <option name="taskNames">
           <list>
             <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="wei-java [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publish" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -1497,19 +1505,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.wei-java [clean]" />
-      <item itemvalue="Gradle.wei-java [build]" />
       <item itemvalue="Gradle.wei-java [publishToMavenLocal]" />
       <item itemvalue="Gradle.wei-java:base [clean]" />
       <item itemvalue="Gradle.wei-java:base [build]" />
+      <item itemvalue="Gradle.wei-java [assemble]" />
+      <item itemvalue="Gradle.wei-java [publish]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.wei-java [publish]" />
+        <item itemvalue="Gradle.wei-java [assemble]" />
         <item itemvalue="Gradle.wei-java:base [build]" />
         <item itemvalue="Gradle.wei-java:base [clean]" />
         <item itemvalue="Gradle.wei-java [publishToMavenLocal]" />
-        <item itemvalue="Gradle.wei-java [build]" />
-        <item itemvalue="Gradle.wei-java [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -1606,7 +1614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522662266954</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="配置优化调整">
+      <created>1544681463002</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1544681463002</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1630,7 +1645,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19144000" />
+    <option name="totallyTimeSpent" value="19370000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1656,10 +1671,10 @@
       <window_info anchor="bottom" id="FindBugs-IDEA" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5021322" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Spring" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.32887402" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4978678" visible="true" weight="0.32887402" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4978678" weight="0.32887402" />
       <window_info anchor="bottom" id="Inspection Results" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.5075922" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -1709,7 +1724,8 @@
     <MESSAGE value="删除IDE配置文件管理" />
     <MESSAGE value="包调整" />
     <MESSAGE value="优化调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化调整" />
+    <MESSAGE value="配置优化调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置优化调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2032,9 +2048,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/gradle.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -2045,8 +2059,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="176">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -2059,15 +2073,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="59" />
+        <state relative-caret-position="224">
+          <caret line="104" column="12" selection-start-line="104" selection-start-column="12" selection-end-line="104" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="312">
+          <caret line="116" column="77" selection-start-line="116" selection-start-column="77" selection-end-line="116" selection-end-column="77" />
         </state>
       </provider>
     </entry>
