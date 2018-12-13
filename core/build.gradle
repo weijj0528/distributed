@@ -2,22 +2,9 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
-group 'com.weiun'
-version '1.0'
+group "$parent.group"
+version "$parent.version"
 
-sourceCompatibility = 1.6
-
-repositories {
-    mavenLocal()
-    // 局域网Maven仓库
-    maven {
-        url "https://repo.rdc.aliyun.com/repository/35936-snapshot-wPlgaM"
-    }
-    // 阿里云
-    maven {
-        url "http://maven.aliyun.com/nexus/content/groups/public"
-    }
-}
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 dependencies {

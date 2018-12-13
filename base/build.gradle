@@ -2,21 +2,8 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'maven-publish'
 
-group 'com.weiun'
-version '1.0'
-
-sourceCompatibility = 1.5
-
-repositories {
-    // 使用Maven本地仓库 USER_HOME/.m2/settings.xml >> M2_HOME/conf/settings.xml >> USER_HOME/.m2/repository。
-    mavenLocal()
-    //阿里云
-    maven {
-        url "http://maven.aliyun.com/nexus/content/groups/public"
-    }
-
-
-}
+group "$parent.group"
+version "$parent.version"
 
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 

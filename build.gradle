@@ -1,14 +1,23 @@
-group 'com.weiun'
-version '1.0-SNAPSHOT'
-
 apply plugin: 'java'
 
-sourceCompatibility = 1.8
+group 'com.weiun'
+version '1.0'
 
-repositories {
-    mavenCentral()
+allprojects {
+
+    sourceCompatibility = 1.8
+    
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+    
+    repositories {
+        // 使用Maven本地仓库 USER_HOME/.m2/settings.xml >> M2_HOME/conf/settings.xml >> USER_HOME/.m2/repository。
+        mavenLocal()
+        //阿里云
+        maven {
+            url "http://maven.aliyun.com/nexus/content/groups/public"
+        }
+    }
+    
 }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
-}
+
