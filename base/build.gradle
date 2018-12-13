@@ -10,20 +10,11 @@ sourceCompatibility = 1.5
 repositories {
     // 使用Maven本地仓库 USER_HOME/.m2/settings.xml >> M2_HOME/conf/settings.xml >> USER_HOME/.m2/repository。
     mavenLocal()
-    // 局域网Maven仓库
-//    maven {
-//        url "http://192.168.1.131:8081/repository/maven-releases/"
-//    }
     //阿里云
-//    maven {
-//        url "http://maven.aliyun.com/nexus/content/groups/public/"
-//    }
-    // Maven 中央仓库
-    mavenCentral()
-    // 其他Maven仓库
-//    maven {
-//        url "https://maven-eu.nuxeo.org/nexus/content/repositories/public-releases/"
-//    }
+    maven {
+        url "http://maven.aliyun.com/nexus/content/groups/public"
+    }
+
 
 }
 
@@ -124,10 +115,10 @@ publishing {
     }
     repositories {
         maven{
-            url "http://maven.lovejiayuan.cn:8081/repository/maven-releases/"
+            url "https://repo.rdc.aliyun.com/repository/35936-snapshot-wPlgaM"
             credentials {
-                username 'admin'
-                password 'weijj0528'
+                username 'XIvnTE'
+                password 'Tee1Q6ondj'
             }
         }
     }
